@@ -1,10 +1,11 @@
 # Arquitetura do projeto
 
-## Pacotes instalados no projeto
+## :earth_americas: Pacotes instalados no projeto
 
-+ Normalize 
-+ ESLint
-+ Absolut import
-+ ClassNames
-+ Sass
-+ React-router-dom
++ Normalize ------ Comando de instalação `npm install normalize.css`
++ Css Modules ---- Comando de instalação `npm install -D typescript-plugin-css-modules sass` :heavy_check_mark:
++ ESLint --------- Comando de instalação `npm init @eslint/config` :heavy_check_mark:
++ Absolut import - Adição no arquivo `tsconfig.json` / `CompilerOption` / `"baseUrl": "src"` :heavy_check_mark:
++ ClassNames ----- Comando de instalação `npm install classnames` :heavy_check_mark:
++ Sass ----------- Comando de instalação `npm install -D typescript-plugin-css-modules sass` :heavy_check_mark:
++ React-router-dom Comando de instalação `npm install react-router-dom` :heavy_check_mark:

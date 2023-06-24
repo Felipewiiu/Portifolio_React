@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 export default function DefaultPage() {
-    return (
-        <div>Pagina padrão</div>
-    )
-};
+  return (
+    <h1>Pagina padrão</h1>
+  );
+}
