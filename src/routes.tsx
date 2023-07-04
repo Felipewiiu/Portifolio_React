@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import DefaultPage from 'Pages/DefaultPage';
+import DefaultPage from 'components/DefaultPage';
 
 import React from 'react';
 
