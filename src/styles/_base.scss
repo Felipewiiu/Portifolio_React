@@ -1,0 +1,24 @@
+//Tamamho de telas
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+$font-title: 'Space Grotesk', sans-serif;
+
+
+$primary-color: #FD8A8A;
+$secondary-color: #A8D1D1;
+$tertiary-color: #F1E0AC; 
+$title-color: #343434;
+
+// Cores do tema escuro da aplicação
+
+$dark-theme-color: #183153;   
+
+// Ajuste de telas
+
+$breakin-point-desktop: 1024px;
+$breakin-point-tablet: 768px;
+$breakin-point-smartphone: 375px;
+$breakin-point-mini-smartphone: 320px;
+
+
+

@@ -1,14 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
 
-$font-title: 'Space Grotesk', sans-serif;
+// padin container
 
-
-$cor-primaria: #FD8A8A;
-$cor-secundaria: #A8D1D1;
-$cor-terciaria: #F1E0AC; 
-$cor-titulo: #343434;
-
-// Cores do tema escuro da aplicação
-
-$cor-tema-escuro: #183153;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-
+$padding-horizontal-mobile: 100px;
+$padding-horizontal-sm: 150px;
+$padding-horizontal-md: 200px;
+$padding-horizontal: 250px;
