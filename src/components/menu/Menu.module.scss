@@ -1,0 +1,35 @@
+@import 'styles/base.scss';
+
+.container{
+    background-color: red;
+    width: 36.75rem;
+    height: 2.5rem;
+    display: flex;
+    border-radius: 2.9375rem;
+    border: 0.5px solid #FD8A8A;
+    background: rgba(253, 253, 253, 0.00);
+    
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        
+        
+        
+    }
+    &__link {
+        list-style: none;
+        a{
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: $font-title;
+            font-style: normal;
+            font-weight: 400;
+            color: $title-color;
+            cursor: pointer;
+        }
+    }
+}
+

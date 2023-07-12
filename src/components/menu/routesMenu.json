@@ -1,0 +1,22 @@
+[
+    {
+        "label": "Home",
+        "to": "/",
+        "id": 0
+    },
+    {
+        "label": "Projetos",
+        "to": "/projetos",
+        "id": 1
+    },
+    {
+        "label": "Posts",
+        "to": "/posts",
+        "id": 2
+    },
+    {
+        "label": "Sobre",
+        "to": "/sobre",
+        "id": 3
+    }
+]
