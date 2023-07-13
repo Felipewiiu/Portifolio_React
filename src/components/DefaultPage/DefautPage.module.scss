@@ -4,5 +4,12 @@
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    &__menu{
+        // background-color: red;
+        height: 100%;
+        width: 100%;
+        padding-left: 6.31rem;
+        margin-top: 3.94rem;
+    }
 }
 
