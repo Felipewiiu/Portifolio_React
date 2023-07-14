@@ -1,0 +1,56 @@
+@import '../../styles/base.scss';
+
+.container {
+    width: 74.9375rem;
+    height: 31.25rem;
+    flex-shrink: 0;
+    // background-color: red;
+
+    &__secundary {
+        width: 43.125rem;
+        margin-top: 7rem;
+        // background-color: aqua;
+
+        h1 {
+            color: $title-color;
+            font-family: $font-title;
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin: 0px;
+        }
+
+        p {
+            margin-top: 0.19rem;
+            width: 35.375rem;
+            color: #000;
+            font-family: Space Grotesk;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+
+    }
+
+    &__img {
+        display: flex;
+        align-items: center;
+        margin-top: 1.75rem;
+        width: 43.125rem;
+        height: 3.8125rem;
+        flex-shrink: 0;
+        border-bottom: 0.5px solid #FD8A8A;
+        border-left: 0.5px solid #FD8A8A;
+
+        .container__distribution {
+            display: flex;
+            justify-content: space-evenly;
+            width: 10rem;
+            height: auto;
+            
+        }
+    }
+}
