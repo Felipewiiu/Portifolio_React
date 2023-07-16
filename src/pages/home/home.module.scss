@@ -1,13 +1,17 @@
 @import '../../styles/base.scss';
 
 .container {
-    width: 74.9375rem;
-    height: 31.25rem;
+    width: 100%;
+    height: 75%;
     flex-shrink: 0;
+    display: flex;
     // background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7%;
 
     &__secundary {
-        width: 43.125rem;
+        width: calc(100% - 434px);
         margin-top: 7rem;
         // background-color: aqua;
 
@@ -24,7 +28,7 @@
         p {
             margin-top: 0.19rem;
             width: 35.375rem;
-            color: #000;
+            color:$title-color;
             font-family: Space Grotesk;
             font-size: 0.875rem;
             font-style: normal;
@@ -42,8 +46,8 @@
         width: 43.125rem;
         height: 3.8125rem;
         flex-shrink: 0;
-        border-bottom: 0.5px solid #FD8A8A;
-        border-left: 0.5px solid #FD8A8A;
+        border-bottom: 0.5px solid $primary-color;
+        border-left: 0.5px solid $primary-color;
 
         .container__distribution {
             display: flex;
@@ -52,5 +56,20 @@
             height: auto;
             
         }
+    }
+
+    &__imgProfile {
+        width: 35%;
+        height: 439px;
+        // background-color: #FD8A8A;
+        border: solid 0.2px $primary-color;
+        border-left: solid 0.2px #fdfdfd00;
+        border-radius: 0px 47px 47px 47px;
+        background: url("../../../public/assets/felipe.png");
+        opacity: 0.9;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+
     }
 }

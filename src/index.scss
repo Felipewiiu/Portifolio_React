@@ -16,6 +16,8 @@ code {
 
 body {
   background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
 }
 
 h1{
@@ -33,6 +35,8 @@ h1{
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  
+  height: 100vh;
+  width: 100vw;
+  max-width: 1200px;
+  // background-color: blueviolet;
 }

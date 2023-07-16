@@ -23,11 +23,16 @@ export default function Home() {
         </p>
         <div className={styles.container__img}>
           <div className={styles.container__distribution}>
-            <Github />
-            <Instagran />
-            <Linkedin />
+            
+            <a href="https://github.com/Felipewiiu" target='blank'><Github /></a>
+            <a href="https://www.instagram.com/" target='blank'><Instagran /></a>
+            <a href="https://www.linkedin.com/in/felipe-front-end/" target='blank'><Linkedin /></a>
+            
           </div>
         </div>
+      </div>
+      <div className={styles.container__imgProfile}>
+
       </div>
 
     </section>

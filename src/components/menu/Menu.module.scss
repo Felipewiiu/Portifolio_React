@@ -1,13 +1,12 @@
 @import 'styles/base.scss';
 
 .container{
-    background-color: red;
-    width: 36.75rem;
+    width: 55%;
     height: 2.5rem;
     display: flex;
     border-radius: 2.9375rem;
     border: 0.5px solid #FD8A8A;
-    background: rgba(253, 253, 253, 0.00);
+    // background: rgba(222, 101, 101, 0.586);
     
     &__list {
         display: flex;

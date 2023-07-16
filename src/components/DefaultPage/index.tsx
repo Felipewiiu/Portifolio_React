@@ -10,7 +10,7 @@ export default function DefaultPage() {
 
       </div>
 
-      <div className={styles.container__descricao}>
+      <div className={styles.container__section}>
         <Outlet/>
       </div>
     </div>
