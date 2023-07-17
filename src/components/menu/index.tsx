@@ -1,11 +1,13 @@
 import routesMenu from './routesMenu.json';
 import styles from './Menu.module.scss';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 
 export default function Menu() {
- 
+  const location = useLocation();
+
+  console.log(location);
   return (
     <nav className={styles.container}>
       <ul className={styles.container__list}>

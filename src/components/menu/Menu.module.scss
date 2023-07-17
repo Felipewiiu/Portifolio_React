@@ -29,6 +29,11 @@
             color: $title-color;
             cursor: pointer;
         }
+        &--ativo {
+            a{
+                color: red;
+            }
+        }
     }
 }
 
