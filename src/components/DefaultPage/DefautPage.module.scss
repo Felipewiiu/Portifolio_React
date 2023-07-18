@@ -2,19 +2,19 @@
     display: flex;
     flex-direction: column;
     width: calc(100% - 121px);
-    justify-content: space-around;
-    // background: red;
+    align-items: center;
     height: 100%;
     &__menu{
-        // background-color: rgb(0, 255, 42);
+        // background-color: red;
         width: 100%;
+        // padding-left: 6.31rem;
         margin-top: 5%;
     }
 
     &__section {
         width: 100%;
-        // background-color: greenyellow;
         height: 100%;
+        // background-color: greenyellow;
     }
 }
 

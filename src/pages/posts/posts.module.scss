@@ -1,0 +1,30 @@
+@import '/src/styles/base';
+
+.container {
+    width: 100%;
+    margin-top: 7%;
+
+    // background-color: aqua;
+    h1 {
+        color: $title-color;
+        font-family: $font-title;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0px;
+    }
+
+    p {
+        margin-top: 0.19rem;
+        width: 36.75rem;
+        color: $title-color;
+        font-family: $font-title;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        
+    }
+
+}

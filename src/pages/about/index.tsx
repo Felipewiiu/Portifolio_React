@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function About() {
   return (
-    <h1>Sobre mim</h1>
+    <h1>Sobre min</h1>
   );
 }
