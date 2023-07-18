@@ -4,7 +4,7 @@
     width: 100%;
     margin-top: 7%;
 
-    // background-color: aqua;
+    // background-color: red;
     h1 {
         color: $title-color;
         font-family: $font-title;
@@ -24,6 +24,28 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        
+    }
+
+    &__section {
+        width: 100%;
+        margin-top: 4.56rem ;
+        margin-bottom: 4.56rem ;
+        display: flex;
+        // background-color: aqua;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 35px;
+        
+    }
+
+    &__card {
+        width: 20.375rem;
+        height: 20.5625rem;
+        flex-shrink: 0;
+        background-color: $primary-color;
+        border-radius: 1.5625rem;
+        border: 0.2px solid #5c1010;
         
     }
 

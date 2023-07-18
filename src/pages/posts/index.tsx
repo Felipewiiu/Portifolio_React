@@ -12,6 +12,27 @@ export default function Posts() {
         venho construindo durante o tempo, com o objetivo
         de praticar os conhecimentos adquiridos nos cursos da Alura.
       </p>
+      <div className={styles.container__section}>
+        <div className={styles.container__card}>
+          
+        </div>
+        <div className={styles.container__card}>
+          
+        </div>
+        <div className={styles.container__card}>
+          
+        </div>
+        <div className={styles.container__card}>
+          
+        </div>
+        <div className={styles.container__card}>
+          
+        </div>
+        <div className={styles.container__card}>
+          
+        </div>
+
+      </div>
     </div>
   );
 }
