@@ -1,0 +1,97 @@
+@import '/src/styles/base';
+
+.container {
+    width: 100%;
+    margin-top: 7%;
+
+    // background-color: red;
+    h1 {
+        color: $title-color;
+        font-family: $font-title;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0px;
+    }
+
+    p {
+        margin-top: 0.19rem;
+        width: 36.75rem;
+        color: $title-color;
+        font-family: $font-title;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    &__section {
+        width: 100%;
+        margin-top: 72.96px;
+        margin-bottom: 72.96px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 35px;
+        // background-color: green;
+    }
+
+    &__card {
+        display: flex;
+        align-items: end;
+        width: 20.375rem;
+        height: 20.5625rem;
+        flex-shrink: 0;
+        // background-color: $primary-color;
+        border-radius: 25px 25px 25px 0px;
+        border: 0.1px solid #272727a3;
+        &:hover {
+            transform: scale(1.01);
+            transition: all 400ms;
+        }
+
+        .container__description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+            width: 100%;
+            height: 45%;
+            border-radius: 0px 0px 25px 0px;
+            background-color: $primary-color;
+
+            p {
+                color: #FFF;
+                font-family: $font-title;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                border-radius: 1.5625rem;
+                border: 0.5px solid #F5F5F5;
+                background: rgba(255, 255, 255, 0.00);
+                color: #fdfdfd;
+                width: 7.125rem;
+                height: 1.9375rem;
+                flex-shrink: 0;
+                cursor: pointer;
+                &:hover {
+                    background-color: #f28080;
+                    
+                    transition: all 400ms;
+                }
+                
+            }
+        }
+
+    }
+
+}
