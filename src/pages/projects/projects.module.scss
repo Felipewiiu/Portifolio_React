@@ -44,6 +44,7 @@
         width: 20.375rem;
         height: 20.5625rem;
         flex-shrink: 0;
+        box-sizing: border-box;
         // background-color: $primary-color;
         border-radius: 25px 25px 25px 0px;
         border: 0.1px solid #272727a3;
@@ -69,6 +70,7 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
+                width: 100%;
             }
             button {
                 display: flex;

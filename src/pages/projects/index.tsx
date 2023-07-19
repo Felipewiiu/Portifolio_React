@@ -46,30 +46,7 @@ export default function Projects() {
             </button>
           </div>
         </div>
-        <div className={styles.container__card}>
-          <div className={styles.container__description}>
-            <p>Nome do projeto</p>
-            <button>
-              Ver mais
-            </button>
-          </div>
-        </div>
-        <div className={styles.container__card}>
-          <div className={styles.container__description}>
-            <p>Nome do projeto</p>
-            <button>
-              Ver mais
-            </button>
-          </div>
-        </div>
-        <div className={styles.container__card}>
-          <div className={styles.container__description}>
-            <p>Nome do projeto</p>
-            <button>
-              Ver mais
-            </button>
-          </div>
-        </div>
+      
        
         
 
