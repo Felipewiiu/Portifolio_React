@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './projects.module.scss';
 import Data from 'data/imageProject.json';
+import label from './filterCards/label.json';
 
 export default function Projects() {
   return (
     <div className={styles.container}>
-      
+
       <h1 className={styles.container__title}>
         Confira o que eu ando aprontando.
       </h1>
@@ -15,11 +16,14 @@ export default function Projects() {
         de praticar os conhecimentos adquiridos nos cursos da Alura.
       </p>
 
-      <div className={styles.container__filtro}>
+      <div className={styles.container__filtro} >
         <h4>Ordenar por: </h4>
         <ul>
-          <li>Intermediário</li>
-          <li>Iniciante</li>
+          {label.map(label => (
+            <li key={label.id} onClick={() => console.log('Clicou')}>
+              {label.label}
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -35,7 +39,7 @@ export default function Projects() {
               <p>Projeto: {card.title}</p>
               <button>
                 <a href={card.to} target='blank' >
-                Ver mais
+                  Ver mais
                 </a>
               </button>
             </div>

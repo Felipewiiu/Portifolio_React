@@ -30,12 +30,16 @@
         }
 
         li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             list-style: none;
+            height: 100%;
             margin-inline: 16px;
             background-color: $secondary-color;
-            padding: 0.30rem;
             padding-inline: 15px;
-            border-radius: 25px;
+            border-radius: 5px;
+            cursor: pointer;
         }
     }
 
