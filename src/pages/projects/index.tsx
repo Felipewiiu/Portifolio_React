@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './projects.module.scss';
+import Data from 'data/imageProject.json';
 
 export default function Projects() {
   return (
@@ -14,41 +15,28 @@ export default function Projects() {
       </p>
       <div className={styles.container__section}>
 
-        <div className={styles.container__card}>
-          <div className={styles.container__description}>
-            <p>Nome do projeto</p>
-            <button>
-              Ver mais
-            </button>
+        {Data.map(card => (
+
+          <div key={card.id} className={styles.container__card} >
+            <div className={styles.container__img}>
+              <img src={card.path} alt={card.title} />
+            </div>
+            <div className={styles.container__description}>
+              <p>Projeto: {card.title}</p>
+              <button>
+                <a href={card.to} target='blank' >
+                Ver mais
+                </a>
+              </button>
+            </div>
           </div>
-        </div>
-        <div className={styles.container__card}>
-          <div className={styles.container__description}>
-            <p>Nome do projeto</p>
-            <button>
-              Ver mais
-            </button>
-          </div>
-        </div>
-        <div className={styles.container__card}>
-          <div className={styles.container__description}>
-            <p>Nome do projeto</p>
-            <button>
-              Ver mais
-            </button>
-          </div>
-        </div>
-        <div className={styles.container__card}>
-          <div className={styles.container__description}>
-            <p>Nome do projeto</p>
-            <button>
-              Ver mais
-            </button>
-          </div>
-        </div>
-      
-       
-        
+
+
+        ))}
+
+
+
+
 
       </div>
     </div>
