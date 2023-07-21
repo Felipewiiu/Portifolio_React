@@ -5,43 +5,7 @@
     margin-top: 7%;
 
     
-    .container__filtro {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 30px;
-        margin-top: 32px;
-        // background-color: red;
-        h4 {
-            color: title-color;
-            font-family: $font-title;
-            font-size: 1.25rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            
-            
-        }
-        ul {
-            display: flex;
-            align-items: center;
-            height: 100%;
-            // background-color: green;
-        }
-
-        li {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            list-style: none;
-            height: 100%;
-            margin-inline: 16px;
-            background-color: $secondary-color;
-            padding-inline: 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    }
+    
 
     // background-color: red;
     h1 {

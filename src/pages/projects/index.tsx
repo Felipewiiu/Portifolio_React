@@ -1,9 +1,13 @@
-import React from 'react';
+import {useState} from 'react';
 import styles from './projects.module.scss';
-import Data from 'data/imageProject.json';
-import label from './filterCards/label.json';
+import Data from 'data/cardsProjects.json';
+import FiltroCards from './filterCards';
+
 
 export default function Projects() {
+
+  const [dataCards, setDataCards] = useState(Data);
+
   return (
     <div className={styles.container}>
 
@@ -16,20 +20,11 @@ export default function Projects() {
         de praticar os conhecimentos adquiridos nos cursos da Alura.
       </p>
 
-      <div className={styles.container__filtro} >
-        <h4>Ordenar por: </h4>
-        <ul>
-          {label.map(label => (
-            <li key={label.id} onClick={() => console.log('Clicou')}>
-              {label.label}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <FiltroCards dataCards={dataCards} setDataCards={setDataCards} />
 
       <div className={styles.container__section}>
 
-        {Data.map(card => (
+        {dataCards.map(card => (
 
           <div key={card.id} className={styles.container__card} >
             <div className={styles.container__img}>
