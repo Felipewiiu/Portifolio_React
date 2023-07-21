@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './filterCards.module.scss';
-import label from './label.json';
+import label from 'data/label.json';
 import cardsProjetcs from 'types/IcardsProjects';
+import Ilabel from 'types/Ilabel';
 
 interface Props {
   dataCards: cardsProjetcs
@@ -23,18 +24,19 @@ interface Props {
 
 export default function FiltroCards({dataCards, setDataCards}: Props) {
 
-  // const filtercards = (label) => {
-  //   const filteredCards = dataCards.filter( card =>{
-  //     card.category === 
-  //   })
-  // }
+  const filtercards = (label : string) => {
+    const filteredCards = dataCards.filter( card => card.category.label === label);
+    setDataCards(filteredCards);
+    
+    
+  };
 
   return (
     <div className={styles.container__filtro} >
       <h4>Ordenar por: </h4>
       <ul>
         {label.map(label => (
-          <li key={label.id} onClick={() => console.log(label.label)}>
+          <li key={label.id} onClick={() => filtercards(label.label)}>
             {label.label}
           </li>
         ))}
