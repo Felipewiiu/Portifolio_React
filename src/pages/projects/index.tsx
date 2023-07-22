@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import styles from './projects.module.scss';
 import Data from 'data/cardsProjects.json';
 import FiltroCards from './filterCards';
@@ -20,7 +20,7 @@ export default function Projects() {
         de praticar os conhecimentos adquiridos nos cursos da Alura.
       </p>
 
-      <FiltroCards dataCards={dataCards} setDataCards={setDataCards} />
+      <FiltroCards dataCards={Data} setDataCards={setDataCards} />
 
       <div className={styles.container__section}>
 
