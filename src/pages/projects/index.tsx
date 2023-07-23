@@ -34,7 +34,7 @@ export default function Projects() {
               <p>Projeto: {card.title}</p>
               <button>
                 <a href={card.to} target='blank' >
-                  Ver mais
+                  Espiar
                 </a>
               </button>
             </div>

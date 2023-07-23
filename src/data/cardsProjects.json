@@ -13,7 +13,7 @@
     },
     {
         "title": "Alura Space",
-        "to": "https://aluroni-mocha.vercel.app/",
+        "to": "https://alura-space-sage.vercel.app/",
         "description": "Projeto voltado ao aprendizado do uso de estados com o useState()",
         "path": "/assets/projectImg/AluraSpace.jpeg",
         "data": "",
@@ -25,7 +25,7 @@
     },
     {
       "title": "Alura Studies",
-      "to": "https://aluroni-mocha.vercel.app/",
+      "to": "https://alura-studies-praticando-ts.vercel.app/",
       "description": "Projeto voutado ao aprendizado do react",
       "path": "/assets/projectImg/AluraStudies.jpeg",
       "data": "",
@@ -37,7 +37,7 @@
   },
   {
     "title": "Organo",
-    "to": "https://aluroni-mocha.vercel.app/",
+    "to": "https://organo-atualizado.vercel.app/",
     "description": "Projeto voltado ao aprendizado react",
     "path": "/assets/projectImg/Organo.jpeg",
     "data": "",
@@ -49,7 +49,7 @@
   },
   {
     "title": "Reconhecimento de voz",
-    "to": "https://aluroni-mocha.vercel.app/",
+    "to": "https://reconhecimento-de-voz-eta.vercel.app/",
     "description": "Projeto voltado ao aprendizado HTML e CSS",
     "path": "/assets/projectImg/reconecimento_de_voz.jpeg",
     "data": "",
@@ -61,7 +61,7 @@
   },
   {
     "title": "Portfolio",
-    "to": "https://aluroni-mocha.vercel.app/",
+    "to": "https://portif-lio-ten.vercel.app/",
     "description": "Projeto voltado a prática em HTML e CSS",
     "path": "/assets/projectImg/portifolio.jpg",
     "data": "",
