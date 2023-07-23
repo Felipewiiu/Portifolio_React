@@ -26,27 +26,27 @@ interface Props {
 
 
 export default function FiltroCards({ dataCards, setDataCards }: Props) {
-  const [close, setClose] = useState<number>();
-  const [desable, setDesable] = useState(true);
-  console.log(desable);
+  const [idTag, setIdTag] = useState<number>();
+  const [state, setState] = useState(false);
+  const [repeat, setRepeat] = useState(true);
+  
 
   const clearFilter = (data: cardsProjetcs) => {
     setDataCards(data);
-    setDesable(false);
+    setState(false);
+    setRepeat(false);
+    
   };
 
-
   const filtercards = (id: number) => {
-    if (id === close) return setClose(0);
+    if (id === idTag && repeat === true) return;
+
     const filteredCards = dataCards.filter(card => card.category.id === id);
     setDataCards(filteredCards);
-    setClose(id);
-    if (desable === false) return;
-
-    console.log('Passou teste');
-    setDesable(true);
-
-
+    setIdTag(id);
+    setState(true);
+    setRepeat(true);
+    
   };
 
 
@@ -59,7 +59,7 @@ export default function FiltroCards({ dataCards, setDataCards }: Props) {
             {label.label}
             <p onClick={() => clearFilter(Data)} className={classNames({
               [styles.container__close]: true,
-              [styles['container__close--ativo']]: close === label.id ? desable : ''
+              [styles['container__close--ativo']]: idTag === label.id ? state : ''
             })}>x</p>
           </li>
         ))}
