@@ -2,12 +2,13 @@ import { useState } from 'react';
 import styles from './projects.module.scss';
 import Data from 'data/cardsProjects.json';
 import FiltroCards from './filterCards';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Projects() {
 
   const [dataCards, setDataCards] = useState(Data);
-
+  const navigate = useNavigate();
   return (
     <div className={styles.container}>
 
@@ -26,7 +27,11 @@ export default function Projects() {
 
         {dataCards.map(card => (
 
-          <div key={card.id} className={styles.container__card} >
+          <div
+            key={card.id}
+            className={styles.container__card}
+            onClick={() => navigate(`/card/${card.id}`)}
+          >
             <div className={styles.container__img}>
               <img src={card.path} alt={card.title} />
             </div>

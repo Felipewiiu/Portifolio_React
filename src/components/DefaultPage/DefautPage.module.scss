@@ -2,7 +2,7 @@
     flex-direction: column;
     width: calc(100% - 121px);
     align-items: center;
-    height: 100%;
+    height: calc(100% - 50px);
     &__menu{
         // background-color: red;
         width: 100%;
