@@ -40,7 +40,8 @@
 
     .container__description {
         width: 75%;
-        h3 {
+
+        h1 {
             width: 22.1875rem;
             color: #343434;
             margin-top: 4.06rem;
@@ -60,6 +61,62 @@
             line-height: normal;
             margin-top: 1rem;
             text-align: justify;
+        }
+
+        h3 {
+            color: #343434;
+            font-family: $font-title;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 32px;
+        }
+
+        .container__keyWord {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 16px;
+            width: 100%;
+
+
+
+            h4 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 13.25rem;
+                height: 2.3125rem;
+                border-radius: 5px;
+                background: #FD8A8A;
+                color: #FFF;
+                font-family: Space Grotesk;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 16px;
+            }
+
+        }
+
+        .container__btn {
+            display: flex;
+            justify-content: start;
+            height: 5.125rem;
+            flex-shrink: 0;
+            margin-top: 82px;
+
+            button {
+                width: 13.5rem;
+                height: 4.125rem;
+                flex-shrink: 0;
+                border-radius: 0.625rem;
+                border: 1px solid #A8D1D1;
+                background: #FFF;
+                margin-right: 24px;
+            }
         }
     }
 }
