@@ -30,7 +30,7 @@ export default function Projects() {
           <div
             key={card.id}
             className={styles.container__card}
-           
+            onClick={() => navigate(`/card/${card.id}`)}
           >
             <div className={styles.container__img}>
               <img src={card.path} alt={card.title} />

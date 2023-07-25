@@ -3,6 +3,7 @@
 .container {
     width: 100%;
     height: 70%;
+    margin-bottom: 64px;
     // background-color: aquamarine;
 
     &__banner {
@@ -116,6 +117,24 @@
                 border: 1px solid #A8D1D1;
                 background: #FFF;
                 margin-right: 24px;
+                color: #343434;
+                font-family: Space Grotesk;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                cursor: pointer;
+                &:hover {
+                    background-color: $secondary-color;
+                    color: #fdfdfd;
+                    transition: all 200ms ease-in-out;
+                    
+                }
+                &:active {
+                    transform: scale(0.92);
+                    transition: all 100ms ease-out;
+                }
+
             }
         }
     }

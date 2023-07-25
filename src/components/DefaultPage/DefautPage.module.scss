@@ -2,18 +2,9 @@
     flex-direction: column;
     width: calc(100% - 121px);
     align-items: center;
-    height: calc(100% - 50px);
-    &__menu{
-        // background-color: red;
-        width: 100%;
-        // padding-left: 6.31rem;
-        margin-top: 5%;
-    }
-
-    &__section {
-        width: 100%;
-        height: 100%;
-        // background-color: greenyellow;
-    }
+    height: auto;
+    // margin-bottom: 50px;
+    // background-color: red;
+  
 }
 

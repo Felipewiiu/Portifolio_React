@@ -3,7 +3,7 @@ import styles from './Card.module.scss';
 import Data from 'data/cardsProjects.json';
 
 import { Routes, Route, useParams, useNavigate } from 'react-router-dom';
-import { url } from 'inspector';
+
 
 export default function Cards() {
   const navigate = useNavigate();

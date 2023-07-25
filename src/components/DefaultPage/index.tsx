@@ -5,14 +5,8 @@ import {Outlet} from 'react-router-dom';
 export default function DefaultPage() {
   return (
     <div className={styles.container}>
-      <div className={styles.container__menu}>
-        <Menu/>
-
-      </div>
-
-      <div className={styles.container__section}>
-        <Outlet/>
-      </div>
+      <Menu/>
+      <Outlet/>
     </div>
 
   );

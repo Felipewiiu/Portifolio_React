@@ -16,8 +16,8 @@ code {
 
 body {
   background-color: #f6f6f6;
-  display: flex;
-  justify-content: center;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 h1{
@@ -31,14 +31,19 @@ h1{
   
 }
 
-
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // background-color: aqua;
+}
 
 #root > main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: 100%;
   max-width: 1200px;
   // background-color: blueviolet;
 }
