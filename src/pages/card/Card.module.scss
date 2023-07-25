@@ -40,7 +40,7 @@
     }
 
     .container__description {
-        width: 75%;
+        width: 100%;
 
         h1 {
             width: 22.1875rem;
@@ -62,6 +62,7 @@
             line-height: normal;
             margin-top: 1rem;
             text-align: justify;
+            width: 75%;
         }
 
         h3 {
@@ -104,10 +105,11 @@
 
         .container__btn {
             display: flex;
-            justify-content: start;
+            justify-content: space-between;
             height: 5.125rem;
             flex-shrink: 0;
             margin-top: 82px;
+            // background-color: red;
 
             button {
                 width: 13.5rem;
@@ -124,17 +126,27 @@
                 font-weight: 700;
                 line-height: normal;
                 cursor: pointer;
+
                 &:hover {
                     background-color: $secondary-color;
                     color: #fdfdfd;
                     transition: all 200ms ease-in-out;
-                    
+
                 }
+
                 &:active {
                     transform: scale(0.92);
                     transition: all 100ms ease-out;
                 }
 
+            }
+
+            .toGoBack {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 6rem;
+                
             }
         }
     }

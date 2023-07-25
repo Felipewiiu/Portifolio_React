@@ -1,6 +1,7 @@
 import DefaultPage from 'components/DefaultPage';
 import styles from './Card.module.scss';
 import Data from 'data/cardsProjects.json';
+import {ReactComponent as ToGoBack} from 'assets/toGoBack.svg';
 
 import { Routes, Route, useParams, useNavigate } from 'react-router-dom';
 
@@ -49,8 +50,11 @@ export default function Cards() {
                 <h4>Arquivo estático</h4>
               </div>
               <div className={styles.container__btn}>
-                <button className={styles.btn}>Link githube</button>
-                <button className={styles.btn}>Link Vercel</button>
+                <div>
+                  <button className={styles.btn}>Link githube</button>
+                  <button className={styles.btn}>Link Vercel</button>
+                </div>
+                <button onClick={() => navigate(-1)} className={styles.toGoBack}><ToGoBack/></button>
               </div>
 
             </div>
