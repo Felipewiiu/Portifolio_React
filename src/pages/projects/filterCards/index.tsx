@@ -12,6 +12,7 @@ interface Props {
   setDataCards: React.Dispatch<React.SetStateAction<{
     title: string;
     to: string;
+    toGithub: string;
     description: string;
     path: string;
     data: string;

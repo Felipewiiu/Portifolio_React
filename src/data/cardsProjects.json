@@ -2,6 +2,7 @@
     {
         "title": "Alurone",
         "to": "https://aluroni-mocha.vercel.app/",
+        "toGithub": "https://github.com/Felipewiiu/Aluroni",
         "description": "É um projeto construido em React tem por finalidade vender pratos varirádos de restaurante pela internet",
         "path": "/assets/projectImg/aluroni.jpeg",
         "data": "",
@@ -14,6 +15,7 @@
     {
         "title": "Alura Space",
         "to": "https://alura-space-sage.vercel.app/",
+        "toGithub": "https://github.com/Felipewiiu/AluraSpace",
         "description": "Projeto voltado ao aprendizado do uso de estados com o useState()",
         "path": "/assets/projectImg/AluraSpace.jpeg",
         "data": "",
@@ -26,6 +28,7 @@
     {
       "title": "Alura Studies",
       "to": "https://alura-studies-praticando-ts.vercel.app/",
+      "toGithub": "https://github.com/Felipewiiu/alura-studies",
       "description": "Projeto voutado ao aprendizado do react",
       "path": "/assets/projectImg/AluraStudies.jpeg",
       "data": "",
@@ -38,6 +41,7 @@
   {
     "title": "Organo",
     "to": "https://organo-atualizado.vercel.app/",
+    "toGithub": "https://github.com/Felipewiiu/OrganoAtualizado",
     "description": "Projeto voltado ao aprendizado react",
     "path": "/assets/projectImg/Organo.jpeg",
     "data": "",
@@ -50,6 +54,7 @@
   {
     "title": "Reconhecimento de voz",
     "to": "https://reconhecimento-de-voz-eta.vercel.app/",
+    "toGithub": "https://github.com/Felipewiiu/Reconhecimento-de-voz",
     "description": "Projeto voltado ao aprendizado HTML e CSS",
     "path": "/assets/projectImg/reconecimento_de_voz.jpeg",
     "data": "",
@@ -62,6 +67,7 @@
   {
     "title": "Portfolio",
     "to": "https://portif-lio-ten.vercel.app/",
+    "toGithub": "https://github.com/Felipewiiu/Portif-lio",
     "description": "Projeto voltado a prática em HTML e CSS",
     "path": "/assets/projectImg/portifolio.jpg",
     "data": "",

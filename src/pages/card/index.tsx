@@ -1,7 +1,8 @@
 import DefaultPage from 'components/DefaultPage';
 import styles from './Card.module.scss';
 import Data from 'data/cardsProjects.json';
-import {ReactComponent as ToGoBack} from 'assets/toGoBack.svg';
+import Description from 'data/descriptionCards.json';
+import { ReactComponent as ToGoBack } from 'assets/toGoBack.svg';
 
 import { Routes, Route, useParams, useNavigate } from 'react-router-dom';
 
@@ -10,6 +11,7 @@ export default function Cards() {
   const navigate = useNavigate();
   const { id } = useParams();
   const cards = Data.find(card => card.id === Number(id));
+  const content = Description.find(item => item.id === Number(id));
 
   if (!cards) {
     navigate('*');
@@ -37,24 +39,25 @@ export default function Cards() {
             <div className={styles.container__description}>
               <h1 className={styles.description}>Descrição do projeto</h1>
               <p>
-                Alura Space é uma aplicação escrita em React js  onde é
-                possível manipular uma galeria de  fotos do espaço!
-                O principal motivo de desenvolvimento dessa página é aprendizado sobre
-                manipulação de estados, entender sobre arquivos estáticos, introdução
-                ao Sass e como fazer o deploy na vercel.
+                {content?.description}
               </p>
 
               <h3>Palavras chaves</h3>
               <div className={styles.container__keyWord}>
-                <h4>Manipulação de estado</h4>
-                <h4>Arquivo estático</h4>
+                {content?.keyWords.map(word => (
+                  <h4 key={content.id}>{word}</h4>
+                ))}
               </div>
               <div className={styles.container__btn}>
                 <div>
-                  <button className={styles.btn}>Link githube</button>
-                  <button className={styles.btn}>Link Vercel</button>
+                  <a href={cards.toGithub} target='blank'>
+                    <button className={styles.btn}>Link githube</button>
+                  </a>
+                  <a href={cards.to} target='blank'>
+                    <button className={styles.btn}>Link Vercel</button>
+                  </a>
                 </div>
-                <button onClick={() => navigate(-1)} className={styles.toGoBack}><ToGoBack/></button>
+                <button onClick={() => navigate(-1)} className={styles.toGoBack}><ToGoBack /></button>
               </div>
 
             </div>
