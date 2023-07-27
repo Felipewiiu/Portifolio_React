@@ -14,19 +14,19 @@ export default function Cards() {
   const cards = Data.find(card => card.id === Number(id));
   const content = Description.find(item => item.id === Number(id));
   const Previous = id === '1' ? Number(id) - 0 : Number(id) - 1;
-  const next = id === String(Description.length) ? Number(id) + 0 : Number(id) +1;
-  console.log(String(Description.length));
+  const next = id === String(Description.length) ? Number(id) + 0 : Number(id) + 1;
+  
 
 
   if (!cards) {
-    // navigate('*');
+    navigate('*');
     return <h1>Não encontrado</h1>;
   }
 
 
   return (
     <Routes>
-      <Route path='*' element={<DefaultPage />}>
+      <Route path='/' element={<DefaultPage />}>
         <Route index element={
           <section className={styles.container}>
             <div className={styles.container__banner}>
@@ -49,9 +49,11 @@ export default function Cards() {
 
               <h3>Palavras chaves</h3>
               <div className={styles.container__keyWord}>
-                {content?.keyWords.map(word => (
-                  <h4 key={content.id}>{word}</h4>
+                {content?.keyWords.map((word, index) => (
+                  <h4 key={index}>{word}</h4>
                 ))}
+
+
               </div>
               <div className={styles.container__btn}>
                 <div>
@@ -63,8 +65,18 @@ export default function Cards() {
                   </a>
                 </div>
                 <div className={styles.container__btns}>
-                  <button onClick={() => navigate(`/card/${Previous}`)} className={styles.toGoBack}><ToGoBack /></button>
-                  <button onClick={() => navigate(`/card/${next}`)} className={styles.toGo}><ToGo /></button>
+                  <button
+                    onClick={() => navigate(`/card/${Previous}`)}
+                    className={styles.toGoBack}
+                  >
+                    <ToGoBack />
+                  </button>
+                  <button
+                    onClick={() => navigate(`/card/${next}`)}
+                    className={styles.toGo}
+                  >
+                    <ToGo />
+                  </button>
                 </div>
               </div>
 

@@ -22,7 +22,7 @@ export default function AppRoutes() {
 
           </Route>
 
-          <Route path={'/card/:id'} element={<Cards />} />
+          <Route path={'/card/:id/*'} element={<Cards />} />
 
         </Routes>
       </Router>
