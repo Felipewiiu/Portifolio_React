@@ -2,7 +2,7 @@
     {
         "title": "Alurone",
         "id": 1,
-        "description": "A Alurone é uma aplicação de um restaurante online, onde oferece pratos variádos para todo gosto! Neste projeto foi explorado muitos aspectos da biblioteca react-router-dom para a criação das rotas da aplicação. Foi ultilizado a ferramenta Eslint, uma ferramenta para análise e padronização da escrita do código. Também foi implementado neste projeto as renderizações condicionais de estilos com a biblioteca ClassNames.",
+        "description": "A Alurone é uma página de um restaurante online, onde oferece pratos variádos para todo gosto! Neste projeto foi explorado muitos aspectos da biblioteca react-router-dom para a criação das rotas da aplicação. Foi ultilizado a ferramenta Eslint, uma ferramenta para análise e padronização da escrita do código. Também foi implementado neste projeto as renderizações condicionais de estilos com a biblioteca ClassNames.",
         "keyWords": [
            "ESLint",
            "react-router-dom",
@@ -12,7 +12,7 @@
     {
         "title": "Alura Space",
         "id": 2,
-        "description": " Alura Space é uma aplicação escrita em React js  onde é possível manipular uma galeria de fotos do espaço! O principal motivo de desenvolvimento dessa página é aprendizado sobre manipulação de estados, entender sobre arquivos estáticos, introduçãoao Sass e como fazer o deploy na vercel.",
+        "description": " Alura Space é uma página escrita em React js  onde é possível manipular uma galeria de fotos do espaço! O principal motivo de desenvolvimento dessa página é aprendizado sobre manipulação de estados, entender sobre arquivos estáticos, introduçãoao Sass e como fazer o deploy na vercel.",
         "keyWords": [
             "Manipulação de estado",
             "Arquivos estáticos"
@@ -21,7 +21,7 @@
     {
         "title": "Alura Studies",
         "id": 3,
-        "description": "",
+        "description": "O Alura Studies é um projeto criado com o intuito de treinar  e compreender conceitos do react como:  DRY (Don't Repeat Yourself)  que se refere a prática de evitar a repetição de código ou em outras palavras, significa escrever o mínimo possível de código redundante ou duplicado.",
         "keyWords": [
 
         ]

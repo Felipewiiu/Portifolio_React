@@ -3,6 +3,7 @@ import styles from './Card.module.scss';
 import Data from 'data/cardsProjects.json';
 import Description from 'data/descriptionCards.json';
 import { ReactComponent as ToGoBack } from 'assets/toGoBack.svg';
+import { ReactComponent as ToGo } from 'assets/toGo.svg';
 
 import { Routes, Route, useParams, useNavigate } from 'react-router-dom';
 
@@ -12,9 +13,11 @@ export default function Cards() {
   const { id } = useParams();
   const cards = Data.find(card => card.id === Number(id));
   const content = Description.find(item => item.id === Number(id));
+  const next = 1;
+
 
   if (!cards) {
-    navigate('*');
+    // navigate('*');
     return <h1>Não encontrado</h1>;
   }
 
@@ -57,7 +60,10 @@ export default function Cards() {
                     <button className={styles.btn}>Link Vercel</button>
                   </a>
                 </div>
-                <button onClick={() => navigate(-1)} className={styles.toGoBack}><ToGoBack /></button>
+                <div className={styles.container__btns}>
+                  <button onClick={() => navigate(`/card/${cards['id'] - 1}`)} className={styles.toGoBack}><ToGoBack /></button>
+                  <button onClick={() => navigate(`/card/${cards['id'] + 1}`)} className={styles.toGo}><ToGo /></button>
+                </div>
               </div>
 
             </div>

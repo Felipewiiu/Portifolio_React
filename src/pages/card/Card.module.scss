@@ -148,6 +148,20 @@
                 width: 6rem;
                 
             }
+            .toGo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 6rem;
+                margin-right: 0px;
+                
+            }
+            .container__btns {
+                display: flex;
+                justify-content: end;
+                height: 100%;
+            }
+            
         }
     }
 }
