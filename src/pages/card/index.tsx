@@ -13,7 +13,9 @@ export default function Cards() {
   const { id } = useParams();
   const cards = Data.find(card => card.id === Number(id));
   const content = Description.find(item => item.id === Number(id));
-  const next = 1;
+  const Previous = id === '1' ? Number(id) - 0 : Number(id) - 1;
+  const next = id === String(Description.length) ? Number(id) + 0 : Number(id) +1;
+  console.log(String(Description.length));
 
 
   if (!cards) {
@@ -61,8 +63,8 @@ export default function Cards() {
                   </a>
                 </div>
                 <div className={styles.container__btns}>
-                  <button onClick={() => navigate(`/card/${cards['id'] - 1}`)} className={styles.toGoBack}><ToGoBack /></button>
-                  <button onClick={() => navigate(`/card/${cards['id'] + 1}`)} className={styles.toGo}><ToGo /></button>
+                  <button onClick={() => navigate(`/card/${Previous}`)} className={styles.toGoBack}><ToGoBack /></button>
+                  <button onClick={() => navigate(`/card/${next}`)} className={styles.toGo}><ToGo /></button>
                 </div>
               </div>
 
