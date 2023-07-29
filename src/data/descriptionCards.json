@@ -22,7 +22,7 @@
     {
         "title": "Alura Studies",
         "id": 3,
-        "description": "O Alura Studies é um organizador de estudos, onde o usuário pode definir o tempo de estudo de cada matéria que deseja estudar. Esse projeto foi criado com o intuito de treinar e compreender conceitos do react como: O DRY (Don't Repeat Yourself) que se refere a prática de evitar a repetição de código ou em outras palavras, significa escrever o mínimo possível de código redundante ou duplicado. O SRP (Single Responsibility Principle) que se refere ao  Princípio da Responsabilidade Única que é um dos princípios fundamentais do SOLID, um conjunto de diretrizes para se escrever um código limpo. O useEffect que é um dos hooks mais fundamentais do react que é usado para lidar com os efeitos colaterais em componentes funcionais.",
+        "description": "O Alura Studies é um organizador de estudos, onde o usuário pode definir o tempo de estudo de cada matéria que deseja estudar. Esse projeto foi criado com o intuito de treinar e compreender conceitos como: O DRY (Don't Repeat Yourself) que se refere a prática de evitar a repetição de código ou em outras palavras, significa escrever o mínimo possível de código redundante ou duplicado. O SRP (Single Responsibility Principle) que se refere ao  Princípio da Responsabilidade Única que é um dos princípios fundamentais do SOLID, um conjunto de diretrizes para se escrever um código limpo. O useEffect que é um dos hooks mais fundamentais do react que é usado para lidar com os efeitos colaterais em componentes funcionais.",
         "keyWords": [
             "DRY (Don't Repeat Yourself)",
             "SRP (Single Responsibility Principle)",

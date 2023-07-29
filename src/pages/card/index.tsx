@@ -4,7 +4,7 @@ import Data from 'data/cardsProjects.json';
 import Description from 'data/descriptionCards.json';
 import { ReactComponent as ToGoBack } from 'assets/toGoBack.svg';
 import { ReactComponent as ToGo } from 'assets/toGo.svg';
-
+import { useRef } from 'react';
 import { Routes, Route, useParams, useNavigate } from 'react-router-dom';
 
 
@@ -15,13 +15,18 @@ export default function Cards() {
   const content = Description.find(item => item.id === Number(id));
   const Previous = id === '1' ? Number(id) - 0 : Number(id) - 1;
   const next = id === String(Description.length) ? Number(id) + 0 : Number(id) + 1;
-  
+  const titleRef = useRef<HTMLHeadingElement>(null);
+
 
 
   if (!cards) {
     navigate('*');
     return <h1>Não encontrado</h1>;
   }
+
+  const handleBackClick = () => {
+    titleRef.current?.scrollIntoView({ block:'end', behavior: 'smooth' });
+  };
 
 
   return (
@@ -30,7 +35,7 @@ export default function Cards() {
         <Route index element={
           <section className={styles.container}>
             <div className={styles.container__banner}>
-              <h1>{cards.title}</h1>
+              <h1 ref={titleRef} >{cards.title}</h1>
               <div className={styles.container__img}
                 style={{
                   backgroundImage: `url(${cards.path})`,
@@ -66,13 +71,19 @@ export default function Cards() {
                 </div>
                 <div className={styles.container__btns}>
                   <button
-                    onClick={() => navigate(`/card/${Previous}`)}
+                    onClick={() => {
+                      navigate(`/card/${Previous}`);
+                      handleBackClick();
+                    }}
                     className={styles.toGoBack}
                   >
                     <ToGoBack />
                   </button>
                   <button
-                    onClick={() => navigate(`/card/${next}`)}
+                    onClick={() => {
+                      navigate(`/card/${next}`);
+                      handleBackClick();
+                    }}
                     className={styles.toGo}
                   >
                     <ToGo />
