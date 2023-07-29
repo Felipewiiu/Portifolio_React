@@ -32,9 +32,11 @@
     {
         "title": "Organo",
         "id": 4,
-        "description": "O Organo é um sistema de cadastro de aquads em que o administrador pode organizar sua equipe, adicionando ou removendo integrantes. Esse projeto foi minha primeira transição do Javascript para o seu superset TypeScripts, um conjunto de ferramentas javaScript que adiciona tipagem e novos recursos na linguagem",
+        "description": "O Organo é um sistema de cadastro de aquads em que o administrador pode organizar sua equipe, adicionando ou removendo integrantes. Esse projeto foi minha primeira transição do Javascript para o seu superset TypeScripts, um conjunto de ferramentas javaScript que adiciona tipagem e novos recursos na linguagem. Neste projeto eu aprendi sobre o Destructuring, uma expressão do Javascript que permite descompactar valores de um array ou propriedades de um objeto em variáveis distintas. Esse recurso é muito interessante quando se precisa passa props para um componente de função por exemplo. Também foi explorado a funcionalidade Generics <T>, que permite a criação de componentes e funções reutilizáveis e flexíveis, capazes de trabalhar com diversos tipos de dados, ao invés de se limitarem a um único tipo.",
         "keyWords": [
-            "TypeScript"
+            "TypeScript",
+            "Destructuring",
+            "Generics <T>"
         ]
     },
     {

@@ -47,7 +47,7 @@ export default function Cards() {
                 {content?.description}
               </p>
 
-              <h3>Palavras chaves</h3>
+              <h3>Palavras-chaves</h3>
               <div className={styles.container__keyWord}>
                 {content?.keyWords.map((word, index) => (
                   <h4 key={index}>{word}</h4>
