@@ -12,7 +12,7 @@
     {
         "title": "Alura Space",
         "id": 2,
-        "description": " Alura Space é uma página escrita em React js  onde é possível manipular uma galeria de fotos do espaço! O principal motivo de desenvolvimento dessa página é aprendizado sobre manipulação de estados, entender sobre arquivos estáticos, introduçãoao Sass e como fazer o deploy na vercel.",
+        "description": "Alura Space é uma página escrita com a biblioteca React js, onde é possível manipular uma galeria de fotos do espaço! O principal motivo de desenvolvimento dessa página é o aprendizado sobre manipulação de estados com o useState, uma função de hook, introduzida na versão 16.8 da biblioteca, que permite que os componentes funcionais tenham estado (state). Entender sobre como lidar com arquivos estáticos como imagens, fontes ou arquivos de estilo e a introdução e utilização do Sass (Syntactically Awesome Style Sheets), que adiciona recursos e funcionalidades poderosas ao CSS, tornando a escrita de estilos para páginas web mais eficiente e organizada.",
         "keyWords": [
             "Manipulação de estado",
             "Arquivos estáticos",
@@ -26,7 +26,7 @@
         "keyWords": [
             "DRY (Don't Repeat Yourself)",
             "SRP (Single Responsibility Principle)",
-            "useEffect"
+            "UseEffect"
         ]
     },
     {
@@ -42,17 +42,20 @@
     {
         "title": "Reconhecimento de voz",
         "id": 5,
-        "description": "",
+        "description": "Esse é um projeto de um jogo de adivinhações que pode reconhecer sua voz na hora de dar seus palpites! Todo o projeto é construído com apenas com HTML, CSS e Javascript, que foram um dos meus primeiros contatos com o desenvolvimento WEB. Apesar de simples, esse jogo traz recursos bem interessantes como o uso da Web speech API, uma API desenvolvida pela W3C (World Wide Web Consortium) que permite que os desenvolvedores adicionem recursos de reconhecimento de fala e síntese de fala em aplicativos da web. Também pode se destacar a lógica criada para a validação de resultados informando ao usuário se seu palpite está perto ou longe da resposta correta.",
         "keyWords": [
-
+            "Reconhecimento de voz",
+            "Lógica de validação"
         ]
     },
     {
         "title": "Portfolio",
         "id": 6,
-        "description": "",
+        "description": "Esse foi o meu primeiro portfólio, onde utilizei  a ferramenta Figman para a prototipação da página. todo o projeto está escrito em HTML, CSS e javascript. Com o tempo de estudo eu decidi que precisaria de um ambiente construído por mim, onde eu pudesse compartilhar o que eu estava aprendendo e poder “vender meu peixe” é claro 😂! Isso me motivou a fazer mais projetos para aumentar o número das postagens. Todo layout foi pensado para ser uma página única e de forma responsiva para os diferentes tipos de dispositivos, utilizando recursos como Media Queries, CSS grid e Flexbox para realizar as adaptações.",
         "keyWords": [
-
+            "Figman",
+            "Responsividade",
+            "CSS Grid"
         ]
     }
 ]
