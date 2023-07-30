@@ -3,6 +3,6 @@ import styles from './posts.module.scss';
 
 export default function Posts() {
   return (
-    <h1 >Posts</h1>
+    <h1 >Nada para mostrar ainda!</h1>
   );
 }
