@@ -19,7 +19,6 @@ export default function AppRoutes() {
             <Route path="/projetos" element={<Projects />} />
             <Route path="/posts" element={<Posts />} />
             <Route path="/sobre" element={<About />} />
-
           </Route>
 
           <Route path={'/card/:id/*'} element={<Cards />} />

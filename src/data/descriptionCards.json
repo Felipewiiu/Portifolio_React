@@ -2,7 +2,7 @@
     {
         "title": "Alurone",
         "id": 1,
-        "description": "A Alurone é uma página de um restaurante online, onde oferece pratos variádos para todo gosto! Neste projeto foi explorado muitos aspectos da biblioteca react-router-dom para a criação das rotas da aplicação. Foi ultilizado a ferramenta Eslint, uma ferramenta para análise e padronização da escrita do código. Também foi implementado neste projeto as renderizações condicionais de estilos com a biblioteca ClassNames.",
+        "description": "A Alurone é uma página de um restaurante online, onde oferece pratos variados para todos os gostos! Neste projeto foram explorados muitos aspectos da biblioteca react-router-dom para a criação das rotas da aplicação como o BrowserRouter, Routes, useNavigate, useHistory entre outros.  Foi utilizado a ferramenta Eslint, uma ferramenta para análise e padronização da escrita do código. Com ele é possível identificar erros de sintaxe, problemas de estilos, detecção de variáveis não inicializadas por exemplo. Também foi implementado neste projeto as renderizações condicionais de estilos com a biblioteca ClassNames. Quando você tem um componente React que precisa alternar entre diferentes estilos com base em estados ou propriedades, pode ser complicado manipular as classes CSS diretamente no código JSX é nesse cenário que a lib ClassNames entra em ação e facilita a nossa vida.",
         "keyWords": [
            "ESLint",
            "react-router-dom",

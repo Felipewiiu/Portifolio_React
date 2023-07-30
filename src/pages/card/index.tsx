@@ -6,6 +6,7 @@ import { ReactComponent as ToGoBack } from 'assets/toGoBack.svg';
 import { ReactComponent as ToGo } from 'assets/toGo.svg';
 import { useRef } from 'react';
 import { Routes, Route, useParams, useNavigate } from 'react-router-dom';
+import NotFound from 'pages/notFound';
 
 
 export default function Cards() {
@@ -21,14 +22,14 @@ export default function Cards() {
 
   if (!cards) {
     navigate('*');
-    return <h1>Não encontrado</h1>;
+    return <NotFound/>;
   }
 
   const handleBackClick = () => {
-    titleRef.current?.scrollIntoView({ block:'end', behavior: 'smooth' });
+    titleRef.current?.scrollIntoView({ block: 'end', behavior: 'smooth' });
   };
 
-
+  
   return (
     <Routes>
       <Route path='/' element={<DefaultPage />}>
