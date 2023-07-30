@@ -5,6 +5,7 @@ import Projects from 'pages/projects';
 import Posts from 'pages/posts';
 import About from 'pages/about';
 import Cards from 'pages/card';
+import Footer from 'components/footer';
 
 
 
@@ -25,6 +26,7 @@ export default function AppRoutes() {
 
         </Routes>
       </Router>
+      <Footer/>
     </main>
   );
 }

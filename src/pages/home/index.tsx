@@ -21,20 +21,19 @@ export default function Home() {
           minha trajetória com o objetivo de evoluir
           para se tornar um Dev Full-stack.
         </p>
-        <div className={styles.container__img}>
-          <div className={styles.container__distribution}>
-            
-            <a href="https://github.com/Felipewiiu" target='blank'><Github /></a>
-            <a href="https://www.instagram.com/" target='blank'><Instagran /></a>
-            <a href="https://www.linkedin.com/in/felipe-front-end/" target='blank'><Linkedin /></a>
-            
-          </div>
+
+      </div>
+      <div className={styles.container__containerImg} >
+        <div className={styles.container__imgProfile}></div>
+        <div className={styles.socialMedia}>
+          <a href="https://github.com/Felipewiiu" target='blank'><Github /></a>
+          <a href="https://www.instagram.com/" target='blank'><Instagran /></a>
+          <a href="https://www.linkedin.com/in/felipe-front-end/" target='blank'><Linkedin /></a>
         </div>
-      </div>
-      <div className={styles.container__imgProfile}>
+
 
       </div>
 
-    </section>
+    </section >
   );
 }
