@@ -13,13 +13,14 @@ export default function AppRoutes() {
   return (
     <main>
       <Router>
-
+      
         <Routes>
-          <Route path='/' element={<DefaultPage />} >
-            <Route index element={<Home />} />
-            <Route path="/projetos" element={<Projects />} />
-            <Route path="/posts" element={<Posts />} />
-            <Route path="/sobre" element={<About />} />
+          <Route path='/' element={<Home />} />
+
+          <Route path='/pages' element={<DefaultPage />} >
+            <Route index element={<Projects />} />
+            <Route path="/pages/posts" element={<Posts />} />
+            <Route path="/pages/sobre" element={<About />} />
           </Route>
 
           <Route path={'/card/:id/*'} element={<Cards />} />

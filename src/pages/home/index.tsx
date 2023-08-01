@@ -3,11 +3,13 @@ import styles from './home.module.scss';
 import { ReactComponent as Github } from 'assets/github.svg';
 import { ReactComponent as Instagran } from 'assets/instagran.svg';
 import { ReactComponent as Linkedin } from 'assets/linkedin.svg';
+import Menu from 'components/menu';
 
 
 export default function Home() {
   return (
     <section className={styles.container}>
+      <Menu/>
       <div className={styles.container__secundary}>
         <h1 className={styles.container__title}>
           Front-end developer,

@@ -6,17 +6,17 @@
     },
     {
         "label": "Projetos",
-        "to": "/projetos",
+        "to": "/pages",
         "id": 1
     },
     {
         "label": "Posts",
-        "to": "/posts",
+        "to": "/pages/posts",
         "id": 2
     },
     {
         "label": "Sobre",
-        "to": "/sobre",
+        "to": "/pages/sobre",
         "id": 3
     }
 ]
