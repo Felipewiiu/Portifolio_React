@@ -16,4 +16,8 @@
 
 + Repositório Markdown [Clique aqui] (https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github).
 
+## Exemplo de Media Querys
+
+<img src="madiaQuery.jpg" alt="Imagem media query" width="100%">
+
 
