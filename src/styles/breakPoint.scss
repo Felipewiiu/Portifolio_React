@@ -1,0 +1,28 @@
+
+$deskTop-min-width: 1024px;
+$tablet-min-width: 768px; // acima de 768
+$tablet-max-width: 1023px; // abaixo de 1023
+$smartphone-max-width: 767px; // abaixo de 767
+
+
+
+
+// modelo de responsividade
+
+// @media (min-width: $deskTop-min-width) {
+//     .container {
+//         background-color: red;
+//     }
+// }
+
+// @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+//     .container {
+//         background-color: rgb(38, 163, 221);
+//     }
+// }
+
+// @media (max-width: $smartphone-max-width) {
+//     .container {
+//         background-color: rgb(221, 224, 42);
+//     }
+// }

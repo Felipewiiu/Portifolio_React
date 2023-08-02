@@ -1,14 +1,15 @@
 @import '../../styles/base.scss';
+@import '/src/styles/breakPoint.scss';
 
 .container {
-    
+
     flex-direction: column;
     width: calc(100% - 121px);
     max-width: 1200px;
     align-items: center;
     height: 100%;
     // background-color: red;
-    
+
 
 
     .container__outlet {
@@ -18,6 +19,7 @@
         width: 100%;
         margin-bottom: 2rem;
         align-items: center;
+
         .container__secundary {
             display: flex;
             width: 60%;
@@ -107,4 +109,23 @@
         }
     }
 
+
+}
+
+@media (min-width: $deskTop-min-width) {
+    .container {
+        background-color: red;
+    }
+}
+
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    .container {
+        background-color: rgb(38, 163, 221);
+    }
+}
+
+@media (max-width: $smartphone-max-width) {
+    .container {
+        background-color: rgb(221, 224, 42);
+    }
 }
