@@ -1,15 +1,41 @@
+@media (min-width: $deskTop-min-width) {
+    .container {
+        width: calc(100% - 121px);
+        max-width: 1200px;
+        h1 {
+            font-size: 4rem;
 
+        }
+        p{
+            width: 35.375rem;
+        }
+        .content {
+            display: flex;
+        }
 
-
+    }
+}
 
 @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-    .container {
-        background-color: rgb(38, 163, 221);
-    }
+
 }
 
 @media (max-width: $smartphone-max-width) {
     .container {
         background-color: rgb(221, 224, 42);
+        width: 100%;
+        padding-inline: 16px;
+
+        h1 {
+            background: #FDFDFD;
+            margin-bottom: 1rem;
+        }
+        p {
+            width: 100%;
+        }
+        .content {
+            flex-direction: colum;
+        }
     }
+    
 }
