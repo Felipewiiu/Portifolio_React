@@ -1,131 +1,117 @@
 @import '../../styles/base.scss';
 @import '/src/styles/breakPoint.scss';
 
-.container {
 
-    flex-direction: column;
-    width: calc(100% - 121px);
-    max-width: 1200px;
-    align-items: center;
-    height: 100%;
-    // background-color: red;
-
-
-
-    .container__outlet {
-        display: flex;
-        // background-color: green;
-        height: 100vh;
-        width: 100%;
-        margin-bottom: 2rem;
-        align-items: center;
-
-        .container__secundary {
-            display: flex;
-            width: 60%;
-            justify-content: center;
-            flex-direction: column;
-            height: 100%;
-            // background-color: aqua;
-
-            h1 {
-                color: $title-color;
-                font-family: $font-title;
-                font-size: 4rem;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                margin: 0px;
-            }
-
-            p {
-                margin-top: 0.19rem;
-                width: 35.375rem;
-                color: $title-color;
-                font-family: Space Grotesk;
-                font-size: 0.875rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
-
-
-        }
-
-        .container__img {
-            display: flex;
-            align-items: center;
-            margin-top: 1.75rem;
-            width: 43.125rem;
-            height: 3.8125rem;
-            flex-shrink: 0;
-            border-bottom: 0.5px solid $primary-color;
-            border-left: 0.5px solid $primary-color;
-
-            .container__distribution {
-                display: flex;
-                justify-content: space-evenly;
-                width: 10rem;
-                height: auto;
-
-            }
-        }
-
-        .container__containerImg {
-            width: 35%;
-            height: auto;
-            display: flex;
-
-
-            .container__imgProfile {
-                width: 100%;
-                height: 25.563rem;
-                // background-color: #FD8A8A;
-                border: solid 0.2px $primary-color;
-                border-left: solid 0.2px #fdfdfd00;
-                border-radius: 0px 47px 47px 47px;
-                background: url("../../../public/assets/felipe.png");
-                opacity: 0.9;
-                background-position: left;
-                background-repeat: no-repeat;
-                background-size: cover;
-
-
-            }
-
-            .socialMedia {
-                display: flex;
-                justify-content: start;
-                flex-direction: column;
-                margin-top: 42px;
-
-                // background-color: red;
-                a {
-                    padding: 0%;
-                    margin-left: 10px;
-
-                }
-            }
-        }
-    }
-
-
-}
 
 @media (min-width: $deskTop-min-width) {
     .container {
-        background-color: red;
-    }
-}
 
-@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-    .container {
-        background-color: rgb(38, 163, 221);
-    }
-}
-
-@media (max-width: $smartphone-max-width) {
-    .container {
-        background-color: rgb(221, 224, 42);
+        flex-direction: column;
+        width: calc(100% - 121px);
+        max-width: 1200px;
+        align-items: center;
+        height: 100%;
+        // background-color: red;
+    
+    
+    
+        .container__outlet {
+            display: flex;
+            // background-color: green;
+            height: 100vh;
+            width: 100%;
+            margin-bottom: 2rem;
+            align-items: center;
+    
+            .container__secundary {
+                display: flex;
+                width: 60%;
+                justify-content: center;
+                flex-direction: column;
+                height: 100%;
+                // background-color: aqua;
+    
+                h1 {
+                    color: $title-color;
+                    font-family: $font-title;
+                    font-size: 4rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin: 0px;
+                }
+    
+                p {
+                    margin-top: 0.19rem;
+                    width: 35.375rem;
+                    color: $title-color;
+                    font-family: Space Grotesk;
+                    font-size: 0.875rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+    
+    
+            }
+    
+            .container__img {
+                display: flex;
+                align-items: center;
+                margin-top: 1.75rem;
+                width: 43.125rem;
+                height: 3.8125rem;
+                flex-shrink: 0;
+                border-bottom: 0.5px solid $primary-color;
+                border-left: 0.5px solid $primary-color;
+    
+                .container__distribution {
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 10rem;
+                    height: auto;
+    
+                }
+            }
+    
+            .container__containerImg {
+                width: 35%;
+                height: auto;
+                display: flex;
+    
+    
+                .container__imgProfile {
+                    width: 100%;
+                    height: 25.563rem;
+                    // background-color: #FD8A8A;
+                    border: solid 0.2px $primary-color;
+                    border-left: solid 0.2px #fdfdfd00;
+                    border-radius: 0px 47px 47px 47px;
+                    background: url("../../../public/assets/felipe.png");
+                    opacity: 0.9;
+                    background-position: left;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+    
+    
+                }
+    
+                .socialMedia {
+                    display: flex;
+                    justify-content: start;
+                    flex-direction: column;
+                    margin-top: 42px;
+    
+                    // background-color: red;
+                    a {
+                        padding: 0%;
+                        margin-left: 10px;
+    
+                    }
+                }
+            }
+        }
+    
+    
     }
 }

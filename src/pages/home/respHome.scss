@@ -1,0 +1,15 @@
+
+
+
+
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    .container {
+        background-color: rgb(38, 163, 221);
+    }
+}
+
+@media (max-width: $smartphone-max-width) {
+    .container {
+        background-color: rgb(221, 224, 42);
+    }
+}
