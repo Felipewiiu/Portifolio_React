@@ -35,7 +35,11 @@ export default function Home() {
           <div className={styles.container__imgProfile}></div>
         </div>
 
-
+        <div className={styles.teste}>
+          <div className={styles.d}>teste</div >
+          <div className={styles.d}>teste</div >
+          <div className={styles.d}>teste</div >
+        </div>
       </div>
 
 
