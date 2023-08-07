@@ -1,4 +1,5 @@
 @import '/src/styles/base';
+@import './respFooter.scss';
 
 .container {
     display: flex;
@@ -7,17 +8,20 @@
     width: 100%;
     height: 15%;
     flex-shrink: 0;
-    background-color: $secondary-color;
+   
     &__footer {
         flex-direction: column;
         display: flex;
         justify-content: start;
-        width: calc(100% - 121px);
+       
         max-width: 1200px;
         // background-color: greenyellow;
         p {
             padding-bottom: 1rem;
             color: $title-color;
+        }
+        a {
+            margin-right: 1rem;
         }
         .footer {
             display: flex;

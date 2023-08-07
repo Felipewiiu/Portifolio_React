@@ -1,6 +1,7 @@
 @import 'styles/base.scss';
 
 .container {
+    
     width: 55%;
     height: 2.5rem;
     display: flex;
@@ -8,6 +9,7 @@
     border: 0.5px solid #FD8A8A;
     margin-top: 32px;
     // background: rgba(222, 101, 101, 0.586);
+    
 
     &__list {
         display: flex;
