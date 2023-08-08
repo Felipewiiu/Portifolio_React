@@ -53,18 +53,24 @@
             }
         }
     }
+
     .container__hamburguer {
         background-color: #FD8A8A;
         width: 0px;
         transition: all 700ms ease-in-out;
-        &:hover {
-            width: 50%;
-        }
+        
         .hamburguer {
 
             font-size: 2.5rem;
             cursor: pointer;
         }
        
+    }
+
+    .container__hamburguer--active {
+        background-color: #188b14;
+        width: 200px;
+        transition: all 700ms ease-in-out;
+        
     }
 }

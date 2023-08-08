@@ -3,6 +3,7 @@ import styles from './Menu.module.scss';
 import { Link, useLocation } from 'react-router-dom';
 import { ReactComponent as Hamburguer } from 'components/menu/image/hamburguer.svg';
 import { useState } from 'react';
+import classNames from 'classnames';
 
 
 
@@ -10,13 +11,10 @@ import { useState } from 'react';
 export default function Menu() {
   const location = useLocation();
   const [menuState, setMenuState] = useState(false);
-
   console.log(menuState);
   const handleMenuState = () => {
-    let a = true;
-    setMenuState(a);
-    a = false;
-  
+    setMenuState(!menuState);
+
   };
 
 
@@ -38,7 +36,12 @@ export default function Menu() {
         </ul>
       </nav>
       <div
-        className={styles.container__hamburguer}>
+        className={classNames({
+          [styles.container__hamburguer]: true,
+          [styles['container__hamburguer--active']]: menuState
+        })}
+
+      >
         <Hamburguer
           onClick={handleMenuState}
           className={styles.hamburguer}
