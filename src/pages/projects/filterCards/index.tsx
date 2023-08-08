@@ -31,7 +31,7 @@ export default function FiltroCards({ dataCards, setDataCards }: Props) {
   const [state, setState] = useState(false);
   const [repeat, setRepeat] = useState(true);
   
-
+  
   const clearFilter = (data: cardsProjetcs) => {
     setDataCards(data);
     setState(false);
