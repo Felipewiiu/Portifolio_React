@@ -57,6 +57,7 @@
     }
 
     .container__hamburguer {
+        z-index: 1;
         position: absolute;
         backdrop-filter: blur( 3.5px );
         transition: all 300ms ease-in-out;
@@ -65,16 +66,18 @@
         
         
     }
-    .hamburguer {
-        position: absolute;
-        font-size: 2.5rem;
-        cursor: pointer;
-    }
-    
+  
     .container__hamburguer--active {
-        
+        z-index: 1;
         transition: all 700ms ease-in-out;
         width: 100%;
         height: 100vh;
+    }
+
+    .hamburguer {
+        z-index: 1;
+        position: absolute;
+        font-size: 2.5rem;
+        cursor: pointer;
     }
 }
