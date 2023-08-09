@@ -42,11 +42,11 @@ export default function Menu() {
         })}
 
       >
-        <Hamburguer
-          onClick={handleMenuState}
-          className={styles.hamburguer}
-        />
       </div>
+      <Hamburguer
+        onClick={handleMenuState}
+        className={styles.hamburguer}
+      />
     </div>
   );
 }

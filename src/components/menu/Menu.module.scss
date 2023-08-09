@@ -1,20 +1,22 @@
 @import 'styles/base.scss';
+@import './respMenu.scss';
 
 .container {
     display: flex;
-    justify-content: space-between;
+    
     width: 100%;
     height: 2.5rem;
     margin-top: 32px;
 //    border-bottom: 0.5px solid #FD8A8A;
 //    padding-bottom: 3rem;
     
+    
 
     &__nav {
     
         width: 55%;
         height: 2.5rem;
-        display: flex;
+       
         border-radius: 2.9375rem;
         border: 0.5px solid #FD8A8A;
         
@@ -55,22 +57,24 @@
     }
 
     .container__hamburguer {
-        background-color: #FD8A8A;
-        width: 0px;
-        transition: all 700ms ease-in-out;
+        position: absolute;
+        backdrop-filter: blur( 3.5px );
+        transition: all 300ms ease-in-out;
+        width: 0%;
+        height: 100vh;
         
-        .hamburguer {
-
-            font-size: 2.5rem;
-            cursor: pointer;
-        }
-       
+        
     }
-
+    .hamburguer {
+        position: absolute;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+    
     .container__hamburguer--active {
-        background-color: #188b14;
-        width: 200px;
-        transition: all 700ms ease-in-out;
         
+        transition: all 700ms ease-in-out;
+        width: 100%;
+        height: 100vh;
     }
 }
