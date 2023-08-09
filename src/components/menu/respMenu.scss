@@ -8,6 +8,8 @@
         .container__nav {
             display: flex;
         }
+
+        
     }
 }
 
@@ -17,7 +19,6 @@
 
 @media screen and (max-width: $smartphone-max-width) {
     .container {
-        
         justify-content: end;
         .container__nav {
             display: none;

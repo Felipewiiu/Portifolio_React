@@ -58,25 +58,32 @@
 
     .container__hamburguer {
         z-index: 1;
+        // display: none;
         position: absolute;
         backdrop-filter: blur( 3.5px );
-        transition: all 300ms ease-in-out;
-        width: 0%;
-        height: 100vh;
+        transition: all 300ms ease;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-150vh);
+        background-color: red;
         
         
     }
   
     .container__hamburguer--active {
+        display: flex;
+        transform: translateY(0vh);
         z-index: 1;
-        transition: all 700ms ease-in-out;
+        transition: all 700ms ease;
         width: 100%;
-        height: 100vh;
+        height: 100%;
+        
+        
     }
 
     .hamburguer {
-        z-index: 1;
-        position: absolute;
+        z-index: 2;
+        // position: absolute;
         font-size: 2.5rem;
         cursor: pointer;
     }
