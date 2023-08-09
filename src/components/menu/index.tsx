@@ -44,9 +44,7 @@ export default function Menu() {
 
       >
       </div>
-      <Hamburguer
-        onClick={handleMenuState}
-        className={styles.hamburguer}
+      <Hamburguer onClick={handleMenuState} className={styles.hamburguer}
       />
     </div>
   );
