@@ -35,14 +35,21 @@ export default function Menu() {
           ))}
         </ul>
       </nav>
-      
+
       <div
         className={classNames({
           [styles.container__hamburguer]: true,
           [styles['container__hamburguer--active']]: menuState
-        })}
-
-      >
+        })}>
+        <ul>
+          {routesMenu.map(rota => (
+            <li key={rota.id} className={styles.options}>
+              <Link to={rota.to}>
+                {rota.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
       <Hamburguer onClick={handleMenuState} className={styles.hamburguer}
       />

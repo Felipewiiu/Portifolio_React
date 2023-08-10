@@ -3,12 +3,13 @@
 
 @media screen and (min-width: $deskTop-min-width) {
     .container {
-        padding-right: 2rem;
+        height: 2.5rem;
         justify-content: space-between;
+
         .container__nav {
             display: flex;
+            max-width: 40rem;
         }
-
 
         .container__hamburguer {
             display: none;
@@ -16,18 +17,29 @@
 
         .hamburguer {
             display: none;
-        }
-
-        
+        }      
     }
 }
 
 @media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    .container {
+        height: 3rem;
+        border-bottom: solid 1px $primary-color;
+        padding-bottom: 1rem;
+        justify-content: end;
+        .container__nav {
+            display: none;
+            justify-content: end;
+        }
+    }
 
 }
 
 @media screen and (max-width: $smartphone-max-width) {
     .container {
+        height: 3rem;
+        border-bottom: solid 1px $primary-color;
+        padding-bottom: 1rem;
         justify-content: end;
         .container__nav {
             display: none;
