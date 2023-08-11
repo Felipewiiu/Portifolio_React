@@ -3,11 +3,11 @@
 
 .container {
     display: flex;
-    width: 100%;
-    margin-top: 32px;
+    background-color: #f6f6f6;
+    // margin-top: 32px;
 
     &__nav {
-        width: 55%;
+       
         height: 2.5rem;
         border-radius: 2.9375rem;
         border: 0.5px solid #FD8A8A;
