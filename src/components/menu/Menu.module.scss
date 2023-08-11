@@ -4,7 +4,7 @@
 .container {
     display: flex;
     background-color: #f6f6f6;
-    // margin-top: 32px;
+    
 
     &__nav {
        
@@ -50,12 +50,12 @@
         height: 0px;
         border: solid 0.5px rgba(99, 99, 99, 0.295);
         border-radius: 10px;
-        transition: all 500ms ease-in-out;
+        transition: all 300ms ease-in-out;
         ul {
             width: 100%;
             height: 100%;
             opacity: 0;
-            transition: all 700ms ease-in-out;
+            transition: all 300ms ease-in-out;
             gap: 1rem;
 
             .options {
@@ -76,14 +76,14 @@
 
     .container__hamburguer--active {
         background-color: #f6f6f6;
-        margin-top: 3.5rem;
+        margin-top: 3rem;
         padding: 1rem;
         position: fixed;
         width: 10rem;
         height: 10rem;
         border: solid 0.5px $title-color;
         border-radius: 10px;
-        transition: all 500ms ease-in-out;
+        transition: all 300ms ease-in-out;
 
         ul {
             opacity: 1;
