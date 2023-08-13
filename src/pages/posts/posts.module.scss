@@ -1,0 +1,12 @@
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 121px);
+   
+    img {
+        flex-shrink: 1;
+    }
+}
