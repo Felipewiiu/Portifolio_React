@@ -8,7 +8,7 @@
        
         height: 2.5rem;
         border-radius: 2.9375rem;
-        border: 0.5px solid #FD8A8A;
+        border: 0.5px solid $primary-color;
 
         .container__list {
             display: flex;
@@ -111,6 +111,7 @@
     .hamburguer {
         font-size: 2.5rem;
         cursor: pointer;
+        
     }
     .lightMode__text {
         margin-right: 24px;

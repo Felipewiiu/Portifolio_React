@@ -51,7 +51,7 @@
             }
 
             .container__imgProfile {
-                border: solid 0.1px #fd8a8a7e;
+                border: solid 0.1px $primary-color;
                 border-left: solid 0.2px #fdfdfd00;               
                 background: url("../../../public/assets/felipe.png");
                 opacity: 0.9;
@@ -68,7 +68,7 @@
             display: flex;
             align-items: center;
             margin-top: 16px;
-            border: solid 0.1px #fd8a8a7e;
+            border: solid 0.1px $primary-color;
             border-width: 0px 0px 0.2px 0.2px;
             padding: 1rem;
             border-radius: 0rem 0rem 0rem 1.25rem;
