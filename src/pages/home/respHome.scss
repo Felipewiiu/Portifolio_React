@@ -47,7 +47,7 @@
 
     .content {
         flex-wrap: wrap-reverse;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
 
         .container__secundary {
@@ -61,8 +61,8 @@
 
     .container__imgProfile {
         border-radius: 20rem;
-        width: 24rem;
-        height: 24rem;
+        width: 16rem;
+        height: 16rem;
     }
 }
 

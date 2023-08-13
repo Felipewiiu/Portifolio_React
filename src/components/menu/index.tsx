@@ -2,6 +2,7 @@ import routesMenu from './routesMenu.json';
 import styles from './Menu.module.scss';
 import { Link, useLocation } from 'react-router-dom';
 import { ReactComponent as Hamburguer } from 'components/menu/image/hamburguer.svg';
+import { ReactComponent as Light } from 'components/menu/image/light_mode.svg';
 import { useState } from 'react';
 import classNames from 'classnames';
 
@@ -51,8 +52,11 @@ export default function Menu() {
           ))}
         </ul>
       </div>
-      <Hamburguer onClick={handleMenuState} className={styles.hamburguer}
-      />
+      {/* <Light className={styles.lightMode} /> */}
+      <Hamburguer onClick={handleMenuState} className={styles.hamburguer}/>
+      <div>
+        
+      </div>
     </div>
   );
 }
