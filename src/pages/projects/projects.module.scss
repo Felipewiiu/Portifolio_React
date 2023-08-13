@@ -1,13 +1,10 @@
 @import '/src/styles/base';
+@import './respProjects.scss';
 
 .container {
-    width: 100%;
     margin-top: 32px;
     margin-top: 8rem;
-    
-    
 
-    // background-color: red;
     h1 {
         color: $title-color;
         font-family: $font-title;
@@ -20,7 +17,6 @@
 
     p {
         margin-top: 0.19rem;
-        width: 36.75rem;
         color: $title-color;
         font-family: $font-title;
         font-size: 0.875rem;
@@ -35,11 +31,9 @@
         margin-top: 64px;
         margin-bottom: 72.96px;
         display: flex;
-        // justify-content: space-between;
         flex-wrap: wrap;
         gap: 35px;
         transition: all 400ms ease-out;
-        // background-color: green;
         &:hover > :not(:hover){
             transform: scale(0.9);
             transition: all 300ms ease-in-out;
@@ -50,24 +44,22 @@
 
     &__card {
         display: flex;
-        flex-direction: column;
-        align-items: end;
-        width: 20.375rem;
-        height: 20.5625rem;
+        align-items: center;
+        padding: 15px;
         flex-shrink: 0;
         box-sizing: border-box;
-        border-radius: 25px 25px 25px 0px;
-        border: 0.1px solid #272727a3;
-        transition: all 300ms ease-out;
+        border-radius: 1rem;
+        border: 1px solid rgba(167, 167, 167, 0.497);
+        transition: all 200ms ease-out;
         cursor: pointer;
-        // background-color: red;
+        background-color: #F5F5F5;
+        &:hover {
+            background-color: $secondary-color;
+        }
         .container__img {
-            width: 100%;
-            height: 55%;
+            
             img {
-                width: 100%;
-                height: 100%;
-                border-radius: 25px 25px 0px 0px;
+                border-radius: 1rem;
             }
         }
 
@@ -75,55 +67,15 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 15px;
-            width: 100%;
-            height: 45%;
-            border-radius: 0px 0px 25px 0px;
-            background-color: $primary-color;
-            
-
             p {
-                color: #FFF;
+                color: $title-color;
                 font-family: $font-title;
-                font-size: 1rem;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
                 width: 100%;
             }
-            button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-decoration: none;
-                border-radius: 1.5625rem;
-                border: 0.5px solid #F5F5F5;
-                background: rgba(255, 255, 255, 0.00);
-                color: #fdfdfd;
-                width: 7.125rem;
-                height: 1.9375rem;
-                flex-shrink: 0;
-                cursor: pointer;
-                &:hover {
-                    background-color: #cc5e5e;
-                    color: #ffff;
-                    transition: all 400ms;
-                }
-                a {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-decoration: none;
-                    color: #F5F5F5;
-                    font-family: $font-title;
-                    font-style: normal;
-                    font-weight: 500;
-                    width: 100%;
-                    height: 100%;
-
-                }
-                
-            }
+            
         }
 
     }

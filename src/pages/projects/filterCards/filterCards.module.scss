@@ -1,4 +1,5 @@
 @import '../../../styles/base';
+@import'/src/styles/breakPoint.scss';
 
 .container__filtro {
     display: flex;
@@ -10,7 +11,7 @@
     h4 {
         color: title-color;
         font-family: $font-title;
-        font-size: 1.25rem;
+        
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -64,6 +65,26 @@
                 }
                
             }
+        }
+    }
+}
+
+@media (min-width: $deskTop-min-width) {
+    .container {
+        h4 {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    
+}
+
+@media (max-width: $smartphone-max-width) {
+    .container {
+        h4 {
+            font-size: 1rem;
         }
     }
 }

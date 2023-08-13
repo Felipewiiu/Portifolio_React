@@ -36,7 +36,7 @@ export default function Projects() {
               <img src={card.path} alt={card.title} />
             </div>
             <div className={styles.container__description}>
-              <p>Projeto: {card.title}</p>
+              <p>{card.title}</p>
               <button>
                 <a  onClick={() => navigate(`/card/${card.id}`)} >
                   Espiar

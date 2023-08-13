@@ -1,8 +1,33 @@
-.container{
-    flex-direction: column;
-    width: calc(100% - 121px);
-    max-width: 1200px;
-    align-items: center;
-    height: auto;
+
+@import '/src/styles/breakPoint.scss';
+
+@media (min-width: $deskTop-min-width) {
+    .container{
+        flex-direction: column;
+        width: calc(100% - 121px);
+        max-width: 1200px;
+        align-items: center;
+        height: auto;
+    }
+}
+
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+        align-items: center;
+        height: auto;
+    }
+}
+
+@media (max-width: $smartphone-max-width) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+        align-items: center;
+        height: auto;
+    }
 }
 
