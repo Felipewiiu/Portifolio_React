@@ -52,11 +52,9 @@ export default function Menu() {
           ))}
         </ul>
       </div>
-      {/* <Light className={styles.lightMode} /> */}
+      <Light className={styles.lightMode} />
+      <span className={styles.lightMode__text}>Light Mode</span>
       <Hamburguer onClick={handleMenuState} className={styles.hamburguer}/>
-      <div>
-        
-      </div>
     </div>
   );
 }

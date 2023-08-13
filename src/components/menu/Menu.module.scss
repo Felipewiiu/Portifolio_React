@@ -3,9 +3,7 @@
 
 .container {
     display: flex;
-   
-    
-
+    align-items: center;
     &__nav {
        
         height: 2.5rem;
@@ -77,7 +75,7 @@
 
     .container__hamburguer--active {
         background-color: #f6f6f6;
-        margin-top: 3rem;
+        margin-top: 13rem;
         padding: 1rem;
         position: fixed;
         transform: scale(1);
@@ -111,13 +109,13 @@
     }
 
     .hamburguer {
-        position: fixed;
         font-size: 2.5rem;
         cursor: pointer;
     }
-
-    .lightMode {
-        background-color: aqua;
-       
+    .lightMode__text {
+        margin-right: 24px;
+        margin-left: 8px;
+        color: #f6f6f6;
     }
+
 }

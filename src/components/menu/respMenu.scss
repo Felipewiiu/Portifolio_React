@@ -23,7 +23,15 @@
 
         .hamburguer {
             display: none;
-        }      
+        }    
+        
+        .lightMode {
+            display: none;
+             
+         }
+         span {
+            display: none;
+         }
     }
 }
 
@@ -72,5 +80,13 @@
             display: none;
             justify-content: end;
         }
+
+        .lightMode {
+            display: flex;
+             
+         }
+         span {
+            display: flex;
+         }
     }
 }
