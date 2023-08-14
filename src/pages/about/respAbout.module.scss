@@ -1,0 +1,110 @@
+@import '/src/styles/breakPoint.scss';
+
+@media screen and (min-width: $deskTop-min-width) {
+    .container {
+        flex-direction: column;
+        .title {
+            font-size: 3rem;
+            width: 61.8125rem;
+            height: 7.3125rem;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            background-color: red;
+        }
+
+        p {
+            width: 34.375rem;
+            font-size: 1rem;
+        }
+
+        .img {
+            width: 24.6875rem;
+            height: 34.25rem;
+
+        }
+        .img1 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {}
+.container {
+    flex-direction: column;
+    padding-inline: 1rem;
+
+    .title {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    section {
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .img1 {
+        width: 100%;
+        max-width:  24.6875rem;
+        height: 12.1875rem;
+        flex-shrink: 0;
+        border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+        background-image: url('./sobre.jpg');
+        background-size: cover;
+        background-position-y: 30%;
+        background-repeat: no-repeat;
+        box-shadow: 1px 1px 10px #aaa6a6b9;
+
+    }
+
+
+}
+@media screen and (max-width: $smartphone-max-width) {
+    .container {
+        flex-direction: column;
+        padding-inline: 1rem;
+
+        .title {
+            font-size: 1.5rem;
+            width: 100%;
+        }
+
+        section {
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        p {
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .img1 {
+            width: 100%;
+            height: 12.1875rem;
+            flex-shrink: 0;
+            border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+            background-image: url('./sobre.jpg');
+            background-size: cover;
+            background-position-y: 30%;
+            background-repeat: no-repeat;
+            box-shadow: 1px 1px 10px #aaa6a6b9;
+
+        }
+
+
+    }
+
+
+}

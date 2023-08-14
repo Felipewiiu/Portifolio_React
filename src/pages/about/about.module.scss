@@ -1,45 +1,42 @@
 @import '/src/styles/base';
+@import './respAbout.module.scss';
+
 
 .container {
+    display: flex;
+   
     width: 100%;
     height: auto;
     margin-bottom: 4rem;
     margin-top: 8rem;
+    
 
     h1 {
         color: $title-color;
         font-family: $font-title;
-        font-size: 3rem;
+        
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        width: 61.8125rem;
-        height: 7.3125rem;
+        
         flex-shrink: 0;
     }
-    section {
-        display: flex;
-        justify-content: space-between;
-
-    }
+    
 
     p {
         margin-bottom: 32px;
-        width: 34.375rem;
+        
         color: $font-text;
         font-family: $font-title;
-        font-size: 1rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
 
     .img {
-        width: 24.6875rem;
-        height: 34.25rem;
+        
         flex-shrink: 0;
-        border-radius: 0rem 1.25rem 1.25rem 1.25rem;
-        // background: url('./sobre.jpg'), lightgray 50% / cover no-repeat;
+        border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
         background-image: url('./sobre.jpg');
         background-size: cover;
         background-repeat: no-repeat;
