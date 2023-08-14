@@ -1,10 +1,9 @@
 @import '/src/styles/base';
-@import './respAbout.module.scss';
+@import './respAbout.scss';
 
 
 .container {
     display: flex;
-   
     width: 100%;
     height: auto;
     margin-bottom: 4rem;
@@ -14,12 +13,18 @@
     h1 {
         color: $title-color;
         font-family: $font-title;
-        
+        // font-size: 3rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         
         flex-shrink: 0;
+    }
+
+    section {
+        display: flex;
+       
+       
     }
     
 
@@ -32,6 +37,8 @@
         font-weight: 400;
         line-height: normal;
     }
+
+    
 
     .img {
         

@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className={styles.container}>
       <div className={styles.img1}></div>
-      <h1 className={styles.title}>Eu sou Felipe Oliveira, deixa eu te contar um pouco sobre mim.</h1>
+      <h1>Eu sou Felipe Oliveira, deixa eu te contar um pouco sobre mim.</h1>
       <section>
         <div>
           <p>Eu nasci na cidade do Rio de Janeiro, tenho 30 anos de idade e atuo no momento como técnico em eletrônica. Estou cursando o último período da faculdade em Rede de computadores, uma das melhores decisões que pude tomar na minha carreira profissional. Desde então, a medida que fui me desenvolvendo no curso descobri minha verdadeira paixão profissional, que é o universo da programação. </p>
