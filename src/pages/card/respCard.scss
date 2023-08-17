@@ -23,18 +23,41 @@
                 height: 13.375rem;
             }
         }
+
+        &__description {
+
+
+            p {
+                width: 75%;
+            }
+
+            .container__keyWord {
+                justify-content: space-between;
+                flex-direction: column;
+
+                h4 {
+                    width: 25%;
+
+                }
+            }
+
+            .container__btn {
+                margin-top: 82px;
+
+                button {
+                    width: 13.5rem;
+                    height: 4.125rem;
+                }
+            }
+        }
+
+
     }
 }
 
 @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     .container {
-        width: 100%;
-    }
-}
-
-@media (max-width: $smartphone-max-width) {
-    .container {
-         margin-top: 6rem;
+        margin-top: 6rem;
         // background-color: red;
         width: 100%;
         padding-inline: 1rem;
@@ -59,11 +82,85 @@
                 border-radius: 0rem 1rem 1rem 1rem;
             }
         }
+
+        &__description {
+
+            p {
+                width: 100%;
+            }
+        }
+
+        .container__keyWord {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            h4 {
+                flex-grow: 1;
+                flex-basis: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: $smartphone-max-width) {
+    .container {
+        margin-top: 6rem;
+        // background-color: red;
+        width: 100%;
+        padding-inline: 1rem;
+
+        &__banner {
+            background-color: #894AF3;
+            justify-content: space-evenly;
+            height: 6.3125rem;
+            align-items: center;
+            border-radius: 1rem;
+
+            h1 {
+                font-size: 1.5rem;
+                height: 4.5rem;
+                flex-basis: 8.6875rem;
+                font-weight: 700;
+            }
+
+            .container__img {
+                width: 9.5625rem;
+                height: 4.5rem;
+                border-radius: 0rem 1rem 1rem 1rem;
+            }
+        }
+
+        &__description {
+
+            p {
+                width: 100%;
+            }
+
+            .container__keyWord {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1rem;
+
+                h4 {
+                    flex-grow: 1;
+                    flex-basis: 200px;
+                }
+            }
+
+            .container__btn {
+                flex-wrap: wrap;
+                // background-color: green;
+                margin-bottom: 2rem;
+                margin-top: 32px;
+
+                
+            }
+        }
+
     }
 
-    .container__btn {
-        flex-wrap: wrap;
-        background-color: green;
-        margin-bottom: 2rem;
-    }
+
+
+
 }

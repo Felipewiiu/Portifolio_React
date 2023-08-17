@@ -4,6 +4,7 @@
 .container {
     margin-top: 32px;
     margin-top: 8rem;
+    
 
     h1 {
         color: $title-color;
@@ -38,6 +39,7 @@
         border: 1px solid rgba(167, 167, 167, 0.497);
         transition: all 200ms ease-out;
         background-color: #F5F5F5;
+        box-shadow: 1px 1px 5px #3d3d3d1f;
         &:hover {
             background-color: $secondary-color;
         }

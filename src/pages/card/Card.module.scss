@@ -2,10 +2,7 @@
 @import './respCard.scss';
 
 .container {
-   
     height: 70%;
-    
-    // background-color: aquamarine;
 
     &__banner {
         display: flex;
@@ -62,7 +59,7 @@
             line-height: normal;
             margin-top: 1rem;
             text-align: justify;
-            width: 75%;
+           
         }
 
         h3 {
@@ -77,8 +74,8 @@
 
         .container__keyWord {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+           
+            
             margin-top: 16px;
             width: 100%;
             // background-color: red;
@@ -86,7 +83,7 @@
 
 
             h4 {
-                width: 25%;
+                
                 height: auto;
                 border-radius: 5px;
                 background: $primary-color;
@@ -108,12 +105,12 @@
             justify-content: space-between;
             min-height: 5.125rem;
             flex-shrink: 0;
-            margin-top: 82px;
+           
             // background-color: red;
 
             button {
                 width: 13.5rem;
-                height: 4.125rem;
+                    height: 4.125rem;
                 flex-shrink: 0;
                 border-radius: 0.625rem;
                 border: 1px solid #A8D1D1;

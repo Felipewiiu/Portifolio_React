@@ -37,7 +37,7 @@
 @media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     .container {
         width: 100vw;
-        padding-inline: 2rem;
+        padding-inline: 1rem;
 
     }
 
@@ -69,7 +69,7 @@
 @media screen and (max-width: $smartphone-max-width) {
     .container {
         width: 100vw;
-        padding-inline: 2rem;
+        padding-inline: 1rem;
         margin-top: 4rem;
         
 
@@ -98,9 +98,9 @@
 
     .container__imgProfile {
         border-radius: 20rem;
-        width: 6.4375rem;
-        height: 6.4375rem;
-        margin-block: 2rem;
+        width: 9.4375rem;
+        height: 9.4375rem;
+        margin-block: 3rem;
 
     }
 }
