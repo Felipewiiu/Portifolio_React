@@ -23,21 +23,43 @@ export default function Cards() {
 
   if (!cards) {
     navigate('*');
-    return <NotFound/>;
+    return <NotFound />;
   }
 
   const handleBackClick = () => {
     titleRef.current?.scrollIntoView({ block: 'end', behavior: 'smooth' });
   };
 
-  
+
   return (
     <Routes>
       <Route path='/' element={<DefaultPage />}>
         <Route index element={
           <section className={styles.container}>
             <div className={styles.container__banner}>
-              <h1 ref={titleRef} >{cards.title}</h1>
+              <div>
+                <h1 ref={titleRef} >{cards.title}</h1>
+                <div className={styles.container__btns}>
+                  <button
+                    onClick={() => {
+                      navigate(`/card/${Previous}`);
+                      handleBackClick();
+                    }}
+                    className={styles.toGoBack}
+                  >
+                    <ToGoBack />
+                  </button>
+                  <button
+                    onClick={() => {
+                      navigate(`/card/${next}`);
+                      handleBackClick();
+                    }}
+                    className={styles.toGo}
+                  >
+                    <ToGo />
+                  </button>
+                </div>
+              </div>
               <div className={styles.container__img}
                 style={{
                   backgroundImage: `url(${cards.path})`,
@@ -71,26 +93,7 @@ export default function Cards() {
                     <button className={styles.btn}>Link Vercel</button>
                   </a>
                 </div>
-                <div className={styles.container__btns}>
-                  <button
-                    onClick={() => {
-                      navigate(`/card/${Previous}`);
-                      handleBackClick();
-                    }}
-                    className={styles.toGoBack}
-                  >
-                    <ToGoBack />
-                  </button>
-                  <button
-                    onClick={() => {
-                      navigate(`/card/${next}`);
-                      handleBackClick();
-                    }}
-                    className={styles.toGo}
-                  >
-                    <ToGo />
-                  </button>
-                </div>
+
               </div>
 
             </div>
