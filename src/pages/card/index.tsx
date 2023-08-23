@@ -37,29 +37,7 @@ export default function Cards() {
         <Route index element={
           <section className={styles.container}>
             <div className={styles.container__banner}>
-              <div>
-                <h1 ref={titleRef} >{cards.title}</h1>
-                <div className={styles.container__btns}>
-                  <button
-                    onClick={() => {
-                      navigate(`/card/${Previous}`);
-                      handleBackClick();
-                    }}
-                    className={styles.toGoBack}
-                  >
-                    <ToGoBack />
-                  </button>
-                  <button
-                    onClick={() => {
-                      navigate(`/card/${next}`);
-                      handleBackClick();
-                    }}
-                    className={styles.toGo}
-                  >
-                    <ToGo />
-                  </button>
-                </div>
-              </div>
+              <h1 ref={titleRef} >{cards.title}</h1>
               <div className={styles.container__img}
                 style={{
                   backgroundImage: `url(${cards.path})`,
@@ -69,6 +47,27 @@ export default function Cards() {
 
               </div>
 
+
+            </div>
+            <div className={styles.container__btns}>
+              <button
+                onClick={() => {
+                  navigate(`/card/${Previous}`);
+                  handleBackClick();
+                }}
+                className={styles.toGoBack}
+              >
+                <ToGoBack />
+              </button>
+              <button
+                onClick={() => {
+                  navigate(`/card/${next}`);
+                  handleBackClick();
+                }}
+                className={styles.toGo}
+              >
+                <ToGo />
+              </button>
             </div>
             <div className={styles.container__description}>
               <h1 className={styles.description}>Descrição do projeto</h1>
