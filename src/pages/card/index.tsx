@@ -37,7 +37,20 @@ export default function Cards() {
         <Route index element={
           <section className={styles.container}>
             <div className={styles.container__banner}>
-              <h1 ref={titleRef} >{cards.title}</h1>
+              <div className={styles.title}>
+                <h1 ref={titleRef} >{cards.title}</h1>
+                <div className={styles.container__btn}>
+                  <div>
+                    <a href={cards.toGithub} target='blank'>
+                      <button className={styles.btn}>Link githube</button>
+                    </a>
+                    <a href={cards.to} target='blank'>
+                      <button className={styles.btn}>Link Vercel</button>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
               <div className={styles.container__img}
                 style={{
                   backgroundImage: `url(${cards.path})`,
@@ -83,17 +96,7 @@ export default function Cards() {
 
 
               </div>
-              <div className={styles.container__btn}>
-                <div>
-                  <a href={cards.toGithub} target='blank'>
-                    <button className={styles.btn}>Link githube</button>
-                  </a>
-                  <a href={cards.to} target='blank'>
-                    <button className={styles.btn}>Link Vercel</button>
-                  </a>
-                </div>
 
-              </div>
 
             </div>
           </section>
