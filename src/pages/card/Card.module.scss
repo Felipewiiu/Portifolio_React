@@ -41,8 +41,7 @@
                     cursor: pointer;
 
                     &:hover {
-                        background-color: $yellow;
-                        color: $purple;
+                        background-color: $white;
                         transition: all 200ms ease-in-out;
 
                     }
@@ -54,45 +53,62 @@
 
                 }
 
-
-                .container__btns {
-                    display: flex;
-                    justify-content: end;
-                    height: 100%;
-
-                    .toGoBack {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 6rem;
-
-                    }
-
-                    .toGo {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 6rem;
-                        margin-right: 0px;
-
-                    }
-                }
-
             }
         }
 
         .container__img {
-
             background-size: cover;
             background-repeat: no-repeat;
-
         }
 
     }
 
+    .container__btns {
+        display: flex;
+        justify-content: start;
+        margin-top: 1rem;
+        
+        .toGoBack {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4.625rem;
+            height: 1.6875rem;
+            background: $yellow;
+            border-radius: 0.625rem;
+            border: none;
+            margin-right: 16px;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+            
+            &:active {
+                transform: scale(0.92);
+                transition: all 20ms ease-in-out;
+            }
+    
+        }
+
+        .toGo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4.625rem;
+            height: 1.6875rem;
+            background: $yellow;
+            border-radius: 0.625rem;
+            border: none;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+
+            &:active {
+                transform: scale(0.92);
+                transition: all 20ms ease-in-out;
+            }
+        }
+    }
+
     .container__description {
         width: 100%;
-
         h1 {
             width: 22.1875rem;
             color: #343434;
@@ -128,19 +144,14 @@
 
         .container__keyWord {
             display: flex;
-
-
-            margin-top: 16px;
             width: 100%;
-            // background-color: red;
-
-
+            margin-top: 16px;
 
             h4 {
 
                 height: auto;
                 border-radius: 5px;
-                background: $purple;
+                background: $blue;
                 color: #FFF;
                 font-family: Space Grotesk;
                 font-size: 1rem;

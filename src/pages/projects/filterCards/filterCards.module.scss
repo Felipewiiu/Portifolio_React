@@ -7,22 +7,21 @@
     width: 100%;
     height: 30px;
     margin-top: 32px;
-    // background-color: red;
+
     h4 {
         color: title-color;
         font-family: $font-title;
-        
+
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        
-        
+
     }
+
     ul {
         display: flex;
         align-items: center;
         height: 100%;
-        // background-color: green;
     }
 
     li {
@@ -32,38 +31,40 @@
         list-style: none;
         height: 100%;
         margin-inline: 16px;
-        background-color: $yellow;
+        background-color: $blue;
         padding-inline: 15px;
         border-radius: 5px;
+        color: $white;
         cursor: pointer;
+
         &:hover {
-            background-color: rgb(157, 199, 199);
+            background-color: #3e69df;
         }
+
         .container__close {
-            // display: flex;
             justify-content: center;
-            background-color: white;
-            border: solid 1px $yellow;
+            background-color: $yellow;
+            border: solid 1px $title-color;
             width: 20px;
             height: 20px;
             margin-left: 10px;
             margin-top: 0px;
             padding-bottom: 0.125rem;
-            // padding-right: 0.045rem;
             text-align: center;
             align-items: center;
             border-radius: 25px;
             display: none;
             transition: all 500ms ease-in-out;
+
             &--ativo {
                 display: flex;
                 transition: all 100ms ease-in-out;
+
                 &:hover {
-                    background-color: $purple;
-                    color: white;
+                    background-color: $white;
                     font-weight: 600;
                 }
-               
+
             }
         }
     }
@@ -77,9 +78,7 @@
     }
 }
 
-@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-    
-}
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {}
 
 @media (max-width: $smartphone-max-width) {
     .container {
