@@ -13,11 +13,11 @@
             padding: 2rem 2rem;
             width: 100%;
             height: 13.375rem;
-            background-color: #894AF3;
+            background-color: $purple;
             border-radius: 16px;
 
             h1 {
-                
+
                 // width: 35%;
                 // height: 13.375rem;
                 // padding: 20px;
@@ -25,11 +25,10 @@
 
             .title {
                 .container__btn {
-                
-                    background-color: aquamarine;
                     button {
-                        width: 13.5rem;
-                        height: 4.125rem;
+                        width: 8.9375rem;
+                        height: 3.5rem;
+                        
                     }
                 }
             }
@@ -59,7 +58,7 @@
                 }
             }
 
-            
+
         }
 
 

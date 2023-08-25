@@ -14,7 +14,6 @@
             font-weight: 700;
             margin: 0px;
             flex-shrink: 0;
-            background: #4af3c0;
 
         }
 
@@ -24,28 +23,26 @@
             justify-content: space-between;
             width: auto;
             height: 100%;
-            background-color: red;
 
             .container__btn {
 
                 button {
-                    width: 8.9375rem;
-                    height: 3.5rem;
                     flex-shrink: 0;
                     border-radius: 0.625rem;
-                    background: $primary-color;
-                    margin-right: 24px;
+                    background: $yellow;
+                    margin-right: 16px;
                     color: #343434;
                     font-family: Space Grotesk;
                     font-size: 1rem;
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
+                    border: 1px $white;
                     cursor: pointer;
 
                     &:hover {
-                        background-color: $secondary-color;
-                        color: #fdfdfd;
+                        background-color: $yellow;
+                        color: $purple;
                         transition: all 200ms ease-in-out;
 
                     }
@@ -108,7 +105,7 @@
         }
 
         p {
-            color: $color-text;
+            color: $text-color;
             font-family: $font-title;
             font-size: 1rem;
             font-style: normal;
@@ -143,7 +140,7 @@
 
                 height: auto;
                 border-radius: 5px;
-                background: $primary-color;
+                background: $purple;
                 color: #FFF;
                 font-family: Space Grotesk;
                 font-size: 1rem;

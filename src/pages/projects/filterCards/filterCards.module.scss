@@ -32,7 +32,7 @@
         list-style: none;
         height: 100%;
         margin-inline: 16px;
-        background-color: $secondary-color;
+        background-color: $yellow;
         padding-inline: 15px;
         border-radius: 5px;
         cursor: pointer;
@@ -43,7 +43,7 @@
             // display: flex;
             justify-content: center;
             background-color: white;
-            border: solid 1px $secondary-color;
+            border: solid 1px $yellow;
             width: 20px;
             height: 20px;
             margin-left: 10px;
@@ -59,7 +59,7 @@
                 display: flex;
                 transition: all 100ms ease-in-out;
                 &:hover {
-                    background-color: $primary-color;
+                    background-color: $purple;
                     color: white;
                     font-weight: 600;
                 }
