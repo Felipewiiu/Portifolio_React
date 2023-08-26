@@ -7,33 +7,32 @@
     &__banner {
         display: flex;
         margin-top: 4.06rem;
-
-        h1 {
-            font-family: $font-title;
-            color: #ffff;
-            font-weight: 700;
-            margin: 0px;
-            flex-shrink: 0;
-
-        }
+       
+       
 
         .title {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: auto;
+            width: 50%;
             height: 100%;
+            margin-right: 1rem;
+            h1 {
+                font-family: $font-title;
+                color: #ffff;
+                font-weight: 700;
+                margin: 0px;
+                flex-shrink: 0;
+            }
 
             .container__btn {
-
+                
                 button {
-                    flex-shrink: 0;
                     border-radius: 0.625rem;
                     background: $yellow;
-                    margin-right: 16px;
+                    
                     color: #343434;
                     font-family: Space Grotesk;
-                    font-size: 1rem;
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
@@ -43,7 +42,6 @@
                     &:hover {
                         background-color: $white;
                         transition: all 200ms ease-in-out;
-
                     }
 
                     &:active {

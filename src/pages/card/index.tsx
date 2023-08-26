@@ -40,14 +40,14 @@ export default function Cards() {
               <div className={styles.title}>
                 <h1 ref={titleRef} >{cards.title}</h1>
                 <div className={styles.container__btn}>
-                  <div>
-                    <a href={cards.toGithub} target='blank'>
-                      <button className={styles.btn}>Link githube</button>
-                    </a>
-                    <a href={cards.to} target='blank'>
-                      <button className={styles.btn}>Link Vercel</button>
-                    </a>
-                  </div>
+
+                  <a href={cards.toGithub} target='blank'>
+                    <button className={styles.btn}>Link githube</button>
+                  </a>
+                  <a href={cards.to} target='blank'>
+                    <button className={styles.btn}>Link Vercel</button>
+                  </a>
+
 
                 </div>
               </div>
