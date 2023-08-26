@@ -18,13 +18,13 @@
 
             .title {
                 .container__btn {
-                    min-width: 10.875rem;   
+                    min-width: 10.875rem;
+
                     button {
                         margin-right: 1rem;
                         width: 8.9375rem;
                         height: 3.5rem;
                         font-size: 1rem;
-
                     }
                 }
             }
@@ -33,8 +33,11 @@
                 width: 345px;
                 height: 152px;
                 border-radius: 16px;
-
             }
+        }
+
+        .container__btns {
+            justify-content: start;
         }
 
         &__description {
@@ -48,67 +51,84 @@
 
                 h4 {
                     width: 25%;
-
                 }
             }
-
-
         }
-
-
     }
 }
 
 @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     .container {
         margin-top: 6rem;
-        // background-color: red;
         width: 100%;
         padding-inline: 1rem;
 
         &__banner {
+            flex-grow: 1;
             background-color: #894AF3;
-            justify-content: space-evenly;
-            height: 6.3125rem;
+            justify-content: space-between;
+            height: 9.4375rem;
             align-items: center;
             border-radius: 1rem;
+            padding: 0.94rem 2rem;
 
-            h1 {
-                font-size: 1.5rem;
-                font-weight: 700;
+            .title {
+                min-width: 175px;
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+
+                .container__btn {
+                    height: 3.125rem;
+                    width: 100%;
+                    max-width: 10.875rem;
+                    display: flex;
+                    justify-content: space-between;
+
+                    button {
+                        font-size: 0.6rem;
+                        width: 4.75rem;
+                        height: 3.125rem;
+                        margin-right: 0.5rem;
+                    }
+                }
             }
 
             .container__img {
-                width: 9.5625rem;
-                height: 4.5rem;
-                border-radius: 0rem 1rem 1rem 1rem;
+                width: 14.5625rem;
+                height: 7.5rem;
+                border-radius: 1rem 1rem 1rem 1rem;
             }
+        }
+
+        .container__btns {
+            justify-content: space-between;
         }
 
         &__description {
-
             p {
                 width: 100%;
             }
-        }
 
-        .container__keyWord {
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 1rem;
+            .container__keyWord {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1rem;
 
-            h4 {
-                flex-grow: 1;
-                flex-basis: 200px;
+                h4 {
+                    flex-grow: 1;
+                    flex-basis: 200px;
+                }
             }
         }
+
     }
 }
 
 @media (max-width: $smartphone-max-width) {
     .container {
         margin-top: 6rem;
-        // background-color: red;
         width: 100%;
         padding-inline: 1rem;
 
@@ -124,37 +144,41 @@
 
             .title {
                 min-width: 175px;
+
                 h1 {
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                 }
 
                 .container__btn {
                     height: 3.125rem;
                     width: 100%;
                     max-width: 10.875rem;
-                    // background-color: red;
                     display: flex;
                     justify-content: space-between;
+
                     button {
-                        font-size: 0.5rem;
-                        width:  4.75rem;
+                        font-size: 0.6rem;
+                        width: 4.75rem;
                         height: 3.125rem;
                         margin-right: 0.5rem;
                     }
                 }
             }
 
-
-
             .container__img {
                 width: 9.5625rem;
+                flex-basis: 14.5625rem;
+                ;
                 height: 7.5rem;
                 border-radius: 1rem 1rem 1rem 1rem;
             }
         }
 
-        &__description {
+        .container__btns {
+            justify-content: space-between;
+        }
 
+        &__description {
             p {
                 width: 100%;
             }
@@ -169,13 +193,8 @@
                     flex-basis: 200px;
                 }
             }
-
-
         }
 
     }
-
-
-
 
 }

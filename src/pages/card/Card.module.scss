@@ -57,15 +57,15 @@
         .container__img {
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center;
+            
         }
 
     }
 
     .container__btns {
         display: flex;
-        justify-content: start;
         margin-top: 1rem;
-        
         .toGoBack {
             display: flex;
             align-items: center;

@@ -42,7 +42,7 @@ export default function Cards() {
                 <div className={styles.container__btn}>
 
                   <a href={cards.toGithub} target='blank'>
-                    <button className={styles.btn}>Link githube</button>
+                    <button className={styles.btn}>Link github</button>
                   </a>
                   <a href={cards.to} target='blank'>
                     <button className={styles.btn}>Link Vercel</button>
@@ -94,10 +94,7 @@ export default function Cards() {
                   <h4 key={index}>{word}</h4>
                 ))}
 
-
               </div>
-
-
             </div>
           </section>
         } />
