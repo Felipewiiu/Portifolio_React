@@ -4,9 +4,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: calc(100% - 121px);
+    width: 100%;
+    padding-inline: 1rem;
    
     img {
-        flex-shrink: 1;
+        width: 22rem;
     }
 }
