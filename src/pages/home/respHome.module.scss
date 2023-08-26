@@ -3,7 +3,7 @@
         width: calc(100% - 121px);
         height: 100vh;
         position: relative;
-        
+        align-items: start;
     }
 
     .container__outlet {
@@ -38,7 +38,7 @@
     .container {
         width: 100vw;
         padding-inline: 1rem;
-
+        align-items: center;
     }
 
     .container__outlet {
@@ -47,7 +47,7 @@
 
     .content {
         flex-wrap: wrap-reverse;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
 
         .container__secundary {
@@ -63,6 +63,7 @@
         border-radius: 20rem;
         width: 16rem;
         height: 16rem;
+        margin-block: 3rem;
     }
 }
 
@@ -71,8 +72,8 @@
         width: 100vw;
         padding-inline: 1rem;
         margin-top: 4rem;
-        
-
+        align-items: center;
+        justify-content: center;
     }
 
     .container__outlet {
@@ -81,7 +82,7 @@
 
     .content {
         flex-wrap: wrap-reverse;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
 
         .container__secundary {
