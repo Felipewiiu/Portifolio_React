@@ -5,7 +5,7 @@ import { ReactComponent as Hamburguer } from 'components/menu/image/hamburguer.s
 import { ReactComponent as Light } from 'components/menu/image/light_mode.svg';
 import { useState } from 'react';
 import classNames from 'classnames';
-
+import { ReactComponent as Sun } from './image/sun.svg';
 
 
 

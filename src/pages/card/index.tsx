@@ -10,6 +10,7 @@ import NotFound from 'pages/notFound';
 
 
 
+
 export default function Cards() {
   const navigate = useNavigate();
   const { id } = useParams();
