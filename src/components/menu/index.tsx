@@ -5,17 +5,25 @@ import { ReactComponent as Hamburguer } from 'components/menu/image/hamburguer.s
 import { ReactComponent as Light } from 'components/menu/image/light_mode.svg';
 import { useState } from 'react';
 import classNames from 'classnames';
-import { ReactComponent as Sun } from './image/sun.svg';
+import { ReactComponent as Moon } from './image/moon.svg';
 
 
 
 export default function Menu() {
   const location = useLocation();
   const [menuState, setMenuState] = useState(false);
+
+  const [mode, setMode] = useState(false);
   console.log(menuState);
+
   const handleMenuState = () => {
     setMenuState(!menuState);
 
+  };
+
+  const changeMode = () => {
+    setMode(!mode);
+    console.log(mode);
   };
 
 
@@ -52,9 +60,11 @@ export default function Menu() {
           ))}
         </ul>
       </div>
-      <Light className={styles.lightMode} />
-      <span className={styles.lightMode__text}>Light Mode</span>
-      <Hamburguer onClick={handleMenuState} className={styles.hamburguer}/>
+      <div className={styles.container__mode} onClick={() => changeMode()}>
+           
+
+      </div>
+      <Hamburguer onClick={handleMenuState} className={styles.hamburguer} />
     </div>
   );
 }

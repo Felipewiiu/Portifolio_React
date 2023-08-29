@@ -27,9 +27,23 @@
             display: none;
         }
 
-        .lightMode {
+        .Mode {
             display: flex;
+            
+        }
 
+       
+
+        .container__mode {
+            display: flex;
+            align-items: center;
+            // background-color: red;
+            .Mode__text {
+                color: $text-color;
+                margin-right: 0px;
+                margin-left: 1rem;
+                
+            }
         }
 
         span {
@@ -63,6 +77,14 @@
             display: none;
             justify-content: end;
         }
+
+        .container__mode {
+            display: flex;
+            .Mode__text {
+                color: $white;
+                
+            }
+        }
     }
 
 }
@@ -90,10 +112,20 @@
             justify-content: end;
         }
 
-        .lightMode {
+        .Mode {
             display: flex;
 
         }
+
+        .container__mode {
+            display: flex;
+            .Mode__text {
+                color: $white;
+                
+            }
+        }
+
+
 
         span {
             display: flex;
