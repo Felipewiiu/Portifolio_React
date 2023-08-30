@@ -26,6 +26,24 @@ export default function Menu() {
     console.log(mode);
   };
 
+  const changeIcon = () => {
+    if (mode) {
+      return (
+        <>
+          <Moon />
+          <span className={styles.Mode__text}> Dark mode</span>
+        </>
+      );
+    } else {
+      return (
+        <>
+          <Light />
+          <span className={styles.Mode__text}> Light mode</span>
+        </>
+      );
+    }
+  };
+
 
   return (
     <div className={styles.container}>
@@ -60,10 +78,7 @@ export default function Menu() {
           ))}
         </ul>
       </div>
-      <div className={styles.container__mode} onClick={() => changeMode()}>
-           
-
-      </div>
+      <div className={styles.container__mode} onClick={() => changeMode()}>{changeIcon()}</div>
       <Hamburguer onClick={handleMenuState} className={styles.hamburguer} />
     </div>
   );
