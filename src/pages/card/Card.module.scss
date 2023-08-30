@@ -76,7 +76,9 @@
             margin-right: 16px;
             cursor: pointer;
             transition: all 200ms ease-in-out;
-            
+            user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
             &:active {
                 transform: scale(0.92);
                 transition: all 20ms ease-in-out;
@@ -95,7 +97,9 @@
             border: none;
             cursor: pointer;
             transition: all 200ms ease-in-out;
-
+            user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
             &:active {
                 transform: scale(0.92);
                 transition: all 20ms ease-in-out;
