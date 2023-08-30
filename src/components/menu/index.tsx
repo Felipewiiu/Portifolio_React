@@ -30,15 +30,18 @@ export default function Menu() {
     if (mode) {
       return (
         <>
-          <Moon />
-          <span className={styles.Mode__text}> Dark mode</span>
+          <div className={styles.Mode__container}>
+            <Moon />
+          </div>
         </>
       );
     } else {
       return (
         <>
-          <Light />
-          <span className={styles.Mode__text}> Light mode</span>
+          <div className={styles.Mode__container}>
+            <Light />
+          </div>
+
         </>
       );
     }
