@@ -9,7 +9,7 @@
 + ClassNames ----- Comando de instalação `npm install classnames` :heavy_check_mark:
 + Sass ----------- Comando de instalação `npm install -D typescript-plugin-css-modules sass` :heavy_check_mark:
 + React-router-dom Comando de instalação `npm install react-router-dom` :heavy_check_mark:
-
++ npx eslint ./src --fix
 ## Links úteis
 
 + Site com código de emojis [Clique aqui](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md).
