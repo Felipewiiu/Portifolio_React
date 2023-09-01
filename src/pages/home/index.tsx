@@ -4,9 +4,14 @@ import { ReactComponent as Github } from 'assets/github.svg';
 import { ReactComponent as Instagran } from 'assets/instagran.svg';
 import { ReactComponent as Linkedin } from 'assets/linkedin.svg';
 import Menu from 'components/menu';
+import { useContext } from 'react';
+import { ThemeContext } from 'context/themeContext';
+
 
 
 export default function Home() {
+  const { theme, toggleTheme} = useContext(ThemeContext);
+
   return (
     <section className={styles.container}>
       <Menu />

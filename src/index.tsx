@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import 'normalize.css';
 import './index.scss';
 import Routes from './routes';
+import { ThemeProvider } from 'context/themeContext';
 
 
 
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Routes/>
+    <ThemeProvider>
+      <Routes />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
