@@ -9,7 +9,13 @@ interface Iprops {
   setTheme: React.Dispatch<React.SetStateAction<string>>
 }
 
-export const ThemeContext = createContext({});
+const initialValue = {
+  theme: '',
+  toggleTheme: () => {},
+};
+
+
+export const ThemeContext = createContext(initialValue);
 
 
 
