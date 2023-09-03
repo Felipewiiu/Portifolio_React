@@ -7,14 +7,16 @@ import { useState } from 'react';
 import classNames from 'classnames';
 import { ReactComponent as Moon } from './image/moon.svg';
 
+interface Iprops {
+  toggleTheme: () => void
+  theme: string;
+}
 
-
-export default function Menu() {
+export default function Menu({toggleTheme, theme}:Iprops) {
   const location = useLocation();
   const [menuState, setMenuState] = useState(false);
 
   const [mode, setMode] = useState(false);
-  console.log(menuState);
 
   const handleMenuState = () => {
     setMenuState(!menuState);
@@ -23,10 +25,12 @@ export default function Menu() {
 
   const changeMode = () => {
     setMode(!mode);
-    console.log(mode);
+    toggleTheme();
+    console.log(theme);
   };
 
   const changeIcon = () => {
+   
     if (mode) {
       return (
         <>

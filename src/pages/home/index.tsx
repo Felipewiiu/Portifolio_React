@@ -11,14 +11,15 @@ import { ThemeContext } from 'context/themeContext';
 
 export default function Home() {
   const { theme, toggleTheme} = useContext(ThemeContext);
+  
 
   return (
     <section className={styles.container}>
-      <Menu />
+      <Menu toggleTheme={toggleTheme} theme={theme} />
       <div className={styles.container__outlet}>
         <div className={styles.content}>
           <div className={styles.container__secundary}>
-            <h1>
+            <h1 >
               Front-end developer,
               focado em resultado e um curioso.
             </h1>

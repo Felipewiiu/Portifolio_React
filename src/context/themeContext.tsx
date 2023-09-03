@@ -1,30 +1,34 @@
 import { ReactNode, createContext, useState } from 'react';
 
 // export const INITIAL_STATE = {};
-
-
-interface Iprops {
-  children: ReactNode;
+type userContentTyps = {
   theme: string;
-  setTheme: React.Dispatch<React.SetStateAction<string>>
+  toggleTheme: () => void;
+}
+
+type userContentProps = {
+  children: ReactNode;
 }
 
 const initialValue = {
-  theme: '',
-  toggleTheme: () => {},
+  theme: 'light',
+  toggleTheme: () => {
+    return;
+  }
 };
 
 
-export const ThemeContext = createContext(initialValue);
+export const ThemeContext = createContext<userContentTyps>(initialValue);
 
 
 
 
-export const ThemeProvider = ({ children }: Iprops) => {
+export const ThemeProvider = ({ children }: userContentProps) => {
   const [theme, setTheme] = useState('light');
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
+
   };
 
   return (
