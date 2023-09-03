@@ -6,12 +6,21 @@ import Posts from 'pages/posts';
 import About from 'pages/about';
 import Cards from 'pages/card';
 import Footer from 'components/footer';
+import { useContext } from 'react';
+import { ThemeContext } from 'context/themeContext';
 
 
 
 export default function AppRoutes() {
+  const { theme } = useContext(ThemeContext);
+  let background = '#fdfdfd';
+
+  if (theme === 'dark') {
+    background = '#1E1E2E';
+  }
+
   return (
-    <main>
+    <main style={{ backgroundColor: `${background}`, transition:'all 100ms ease-in-out' }} >
       <Router>
 
         <Routes>
@@ -28,6 +37,6 @@ export default function AppRoutes() {
         </Routes>
       </Router>
       <Footer />
-    </main>
+    </ main>
   );
 }

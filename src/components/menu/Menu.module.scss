@@ -151,5 +151,25 @@
         user-select: none;
     }
 
+    &--dark {
+        background-color: $dark-color;
+        transition: all 100ms ease-in-out;
+        .container__nav {
+            border: 0.5px solid $purple-contrast;
+        }
+        .container__link{
+            a{
+                transition: all 100ms ease-in-out;
+                color: $white;
+            }
+        }
+
+        .container__highlighted {
+            a {
+                color: $purple-contrast;
+                font-weight: 500;
+            }
+        }
+    }
 
 }
