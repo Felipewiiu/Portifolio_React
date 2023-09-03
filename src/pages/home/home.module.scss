@@ -19,7 +19,8 @@
         .content {
             display: flex;
             width: 100%;
-
+    
+    
    .container__secundary {
                 display: flex;
                 flex-direction: column;
@@ -34,7 +35,7 @@
                     line-height: normal;
                     margin: 0px;
                     width: 100%;
-
+                    
                 }
 
                 p {
@@ -46,6 +47,18 @@
                     font-weight: 400;
                     line-height: normal;
                     
+                }
+
+                &--dark {
+                    h1 {
+                        color: $white;
+                        transition: all 300ms ease-in-out;
+                    }
+
+                    p {
+                        color: $white;
+                        transition: all 300ms ease-in-out;
+                    }
                 }
 
             }
@@ -80,5 +93,9 @@
 
     }
 
-
+    &--dark {
+        background-color: $dark-color;
+        transition: all 300ms ease-in-out;
+    }
 }
+

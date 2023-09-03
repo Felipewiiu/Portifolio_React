@@ -12,7 +12,7 @@ interface Iprops {
   theme: string;
 }
 
-export default function Menu({toggleTheme, theme}:Iprops) {
+export default function Menu({toggleTheme}:Iprops) {
   const location = useLocation();
   const [menuState, setMenuState] = useState(false);
 
@@ -26,7 +26,7 @@ export default function Menu({toggleTheme, theme}:Iprops) {
   const changeMode = () => {
     setMode(!mode);
     toggleTheme();
-    console.log(theme);
+    
   };
 
   const changeIcon = () => {

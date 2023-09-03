@@ -6,19 +6,26 @@ import { ReactComponent as Linkedin } from 'assets/linkedin.svg';
 import Menu from 'components/menu';
 import { useContext } from 'react';
 import { ThemeContext } from 'context/themeContext';
+import classNames from 'classnames';
 
 
 
 export default function Home() {
   const { theme, toggleTheme} = useContext(ThemeContext);
-  
+  console.log(theme);
 
   return (
-    <section className={styles.container}>
+    <section className={classNames({
+      [styles.container]: true,
+      [styles['container--dark']]: theme === 'dark'? true : false
+    })}>
       <Menu toggleTheme={toggleTheme} theme={theme} />
       <div className={styles.container__outlet}>
         <div className={styles.content}>
-          <div className={styles.container__secundary}>
+          <div className={classNames({
+            [styles.container__secundary]:true,
+            [styles['container__secundary--dark']]: theme === 'dark'? true: false
+          })}>
             <h1 >
               Front-end developer,
               focado em resultado e um curioso.

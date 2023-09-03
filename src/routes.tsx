@@ -13,7 +13,7 @@ export default function AppRoutes() {
   return (
     <main>
       <Router>
-      
+
         <Routes>
           <Route path='/' element={<Home />} />
 
@@ -27,7 +27,7 @@ export default function AppRoutes() {
 
         </Routes>
       </Router>
-      <Footer/>
+      <Footer />
     </main>
   );
 }

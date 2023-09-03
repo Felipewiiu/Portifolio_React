@@ -1,5 +1,6 @@
 
 @import '/src/styles/breakPoint.scss';
+@import '/src/styles/base';
 
 @media (min-width: $deskTop-min-width) {
     .container{
@@ -8,6 +9,11 @@
         max-width: 1200px;
         align-items: center;
         height: auto;
+
+        &--dark {
+            background-color: $dark-color;
+            transition: all 300ms ease-in-out;
+        }
     }
 }
 
@@ -18,6 +24,11 @@
         max-width: 1200px;
         align-items: center;
         height: auto;
+
+        &--dark {
+            background-color: $dark-color;
+            transition: all 300ms ease-in-out;
+        }
     }
 }
 
@@ -28,6 +39,11 @@
         max-width: 1200px;
         align-items: center;
         height: auto;
+
+        &--dark {
+            background-color: $dark-color;
+            transition: all 300ms ease-in-out;
+        }
     }
 }
 
