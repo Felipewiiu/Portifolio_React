@@ -15,13 +15,13 @@ interface Iprops {
 }
 
 export default function Menu({ toggleTheme }: Iprops) {
-  
+
   const { theme } = useContext(ThemeContext);
   const location = useLocation();
   const [menuState, setMenuState] = useState(false);
   const [mode, setMode] = useState(false);
 
-  
+
   const handleMenuState = () => {
     setMenuState(!menuState);
 
@@ -39,7 +39,7 @@ export default function Menu({ toggleTheme }: Iprops) {
       return (
         <>
           <div className={styles.Mode__container}>
-            <Moon />
+            <Light />
           </div>
         </>
       );
@@ -47,7 +47,7 @@ export default function Menu({ toggleTheme }: Iprops) {
       return (
         <>
           <div className={styles.Mode__container}>
-            <Light />
+            <Moon />
           </div>
 
         </>
@@ -62,18 +62,18 @@ export default function Menu({ toggleTheme }: Iprops) {
       [styles['container--dark']]: theme === 'dark' ? true : false
     })}>
       <nav className={classNames({
-        [styles.container__nav]:true,
-        [styles['container--dark']]:theme === 'dark'? true : false,
+        [styles.container__nav]: true,
+        [styles['container--dark']]: theme === 'dark' ? true : false,
       })}>
 
         <ul className={styles.container__list}>
           {routesMenu.map(rota => (
-            <li 
-              key={rota.id} 
+            <li
+              key={rota.id}
               className={classNames({
                 [styles.container__link]: true,
-                [styles['container--dark']]: theme === 'dark'? true : false,
-                [styles['container__highlighted']]: location.pathname === rota.to ? true: false,
+                [styles['container--dark']]: theme === 'dark' ? true : false,
+                [styles['container__highlighted']]: location.pathname === rota.to ? true : false,
               })}
             >
               <Link to={rota.to} >
