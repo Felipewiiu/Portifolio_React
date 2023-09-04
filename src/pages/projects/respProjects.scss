@@ -7,6 +7,17 @@
 @media (min-width: $deskTop-min-width) {
     .container {
         width: 100%;
+        
+        .container__title  {
+            color: $title-color;
+            font-family: $font-title;
+            font-size: 3rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin: 0px;
+        }
+
         p {
             width: 36.75rem;
         }

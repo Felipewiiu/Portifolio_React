@@ -5,17 +5,6 @@
     margin-top: 32px;
     margin-top: 8rem;
     
-
-    h1 {
-        color: $title-color;
-        font-family: $font-title;
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        margin: 0px;
-    }
-
     p {
         margin-top: 0.19rem;
         color: $title-color;
@@ -65,6 +54,13 @@
             
         }
 
+    }
+
+    &--dark {
+        h1 {
+            color: $white;
+            transition: all 100ms ease-in-out;
+        }
     }
 
 }

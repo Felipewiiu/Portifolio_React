@@ -3,6 +3,9 @@ import styles from './home.module.scss';
 import { ReactComponent as Github } from 'assets/github.svg';
 import { ReactComponent as Instagran } from 'assets/instagran.svg';
 import { ReactComponent as Linkedin } from 'assets/linkedin.svg';
+import { ReactComponent as GithubYellow } from 'assets/square-githubYellow.svg';
+import { ReactComponent as InstagranYellow } from 'assets/square-instagramYellow.svg';
+import { ReactComponent as LinkedinYellow } from 'assets/linkedinYellow.svg';
 import Menu from 'components/menu';
 import { useContext } from 'react';
 import { ThemeContext } from 'context/themeContext';
@@ -39,9 +42,9 @@ export default function Home() {
               para se tornar um Dev Full-stack.
             </p>
             <div className={styles.socialMedia}>
-              <a href="https://github.com/Felipewiiu" target='blank'><Github /></a>
-              <a href="https://www.instagram.com/" target='blank'><Instagran /></a>
-              <a href="https://www.linkedin.com/in/felipe-front-end/" target='blank'><Linkedin /></a>
+              <a href="https://github.com/Felipewiiu" target='blank'>{theme === 'dark'? <GithubYellow/>: <Github/>}</a>
+              <a href="https://www.instagram.com/" target='blank'>{theme === 'dark'? <InstagranYellow/>: <Instagran/>}</a>
+              <a href="https://www.linkedin.com/in/felipe-front-end/" target='blank'>{theme === 'dark'? <LinkedinYellow/>: <Linkedin/>}</a>
             </div>
 
           </div>

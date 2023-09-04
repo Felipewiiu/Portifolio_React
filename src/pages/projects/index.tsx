@@ -3,9 +3,11 @@ import styles from './projects.module.scss';
 import Data from 'data/cardsProjects.json';
 import FiltroCards from './filterCards';
 import { useNavigate } from 'react-router-dom';
-
+import { useContext } from 'react';
+import { ThemeContext } from 'context/themeContext';
 
 export default function Projects() {
+  const {theme} = useContext(ThemeContext);
 
   const [dataCards, setDataCards] = useState(Data);
   const navigate = useNavigate();
