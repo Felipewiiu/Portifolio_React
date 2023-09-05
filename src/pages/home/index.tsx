@@ -41,14 +41,20 @@ export default function Home() {
               minha trajetória com o objetivo de evoluir
               para se tornar um Dev Full-stack.
             </p>
-            <div className={styles.socialMedia}>
+            <div className={classNames({
+              [styles.socialMedia]:true,
+              [styles['socialMedia--dark']]: theme === 'dark'? true: false
+            })}>
               <a href="https://github.com/Felipewiiu" target='blank'>{theme === 'dark'? <GithubYellow/>: <Github/>}</a>
               <a href="https://www.instagram.com/" target='blank'>{theme === 'dark'? <InstagranYellow/>: <Instagran/>}</a>
               <a href="https://www.linkedin.com/in/felipe-front-end/" target='blank'>{theme === 'dark'? <LinkedinYellow/>: <Linkedin/>}</a>
             </div>
 
           </div>
-          <div className={styles.container__imgProfile}></div>
+          <div className={classNames({
+            [styles.container__imgProfile]:true,
+            [styles['container__imgProfile--dark']]: theme === 'dark'? true: false
+          })}></div>
         </div>
 
        

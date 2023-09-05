@@ -5,6 +5,7 @@ import FiltroCards from './filterCards';
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { ThemeContext } from 'context/themeContext';
+import classNames from 'classnames';
 
 export default function Projects() {
   const {theme} = useContext(ThemeContext);
@@ -12,9 +13,15 @@ export default function Projects() {
   const [dataCards, setDataCards] = useState(Data);
   const navigate = useNavigate();
   return (
-    <div className={styles.container}>
+    <div className={classNames({
+      [styles.container]:true,
+      [styles['container--dark']]: theme === 'dark'? true : false
+    })}>
 
-      <h1 className={styles.container__title}>
+      <h1 className={classNames({
+        [styles.container__title]:true,
+        [styles['container__title--dark']]: theme === 'dark'? true : false
+      })}>
         Confira o que eu ando aprontando!
       </h1>
       <p>

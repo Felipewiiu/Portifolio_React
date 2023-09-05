@@ -73,6 +73,11 @@
                 background-size: cover;                
                 display: flex;
                 align-items: center;
+
+                &--dark {
+                    border-color: $purple-contrast;
+                    border-left: solid 0.2px #fdfdfd00;
+                }
                  
             }
         }
@@ -88,6 +93,11 @@
 
             a {
                 padding-right: 1rem;
+            }
+
+            &--dark {
+                border: solid 0.1px $purple-contrast;
+                border-width: 0px 0px 0.2px 0.2px;
             }
         }
 

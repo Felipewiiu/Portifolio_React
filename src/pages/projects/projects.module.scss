@@ -4,6 +4,16 @@
 .container {
     margin-top: 32px;
     margin-top: 8rem;
+
+
+    .container__title {
+        &--dark {
+            color: $white;
+             p {
+                color: $white;
+             }
+        }
+    }
     
     p {
         margin-top: 0.19rem;
@@ -56,11 +66,25 @@
 
     }
 
-    &--dark {
-        h1 {
-            color: $white;
-            transition: all 100ms ease-in-out;
-        }
+   
+
+}
+
+.container--dark {
+    p {
+        color: $white;
     }
 
+    .container__card{
+        background-color: $dark-contrast;
+        border: 1px solid $purple-contrast;
+
+        .container__description { 
+            a {
+                background-color: $purple;
+                border-radius: 1.5625rem;
+                // border: 0.1px solid #F5F5F5;
+            }
+        }
+    }
 }
