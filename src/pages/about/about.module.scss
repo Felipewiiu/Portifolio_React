@@ -45,4 +45,18 @@
         box-shadow: 5px 5px 15px #aaa6a6b9;
     }
 
+    &--dark {
+        h1 {
+            color: $white;
+        }
+
+        p {
+            color: $white;
+        }
+
+        .img {
+            box-shadow: 5px 5px 15px #df1b1b00;
+        }
+    }
+
 }

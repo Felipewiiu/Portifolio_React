@@ -1,8 +1,15 @@
 import styles from './about.module.scss';
+import { useContext } from 'react';
+import { ThemeContext } from 'context/themeContext';
+import classNames from 'classnames';
 
 export default function About() {
+  const {theme} = useContext(ThemeContext);
   return (
-    <div className={styles.container}>
+    <div className={classNames({
+      [styles.container]: true,
+      [styles['container--dark']]: theme === 'dark'? true : false
+    })}>
       <div className={styles.img1}></div>
       <h1>Eu sou Felipe Oliveira, deixa eu te contar um pouco sobre mim.</h1>
       <section>

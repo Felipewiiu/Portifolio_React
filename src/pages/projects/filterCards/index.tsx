@@ -4,7 +4,8 @@ import label from 'data/label.json';
 import cardsProjetcs from 'types/IcardsProjects';
 import classNames from 'classnames';
 import Data from 'data/cardsProjects.json';
-
+import { useContext } from 'react';
+import { ThemeContext } from 'context/themeContext';
 
 
 interface Props {
@@ -27,6 +28,7 @@ interface Props {
 
 
 export default function FiltroCards({ dataCards, setDataCards }: Props) {
+  const {theme} = useContext(ThemeContext);
   const [idTag, setIdTag] = useState<number>();
   const [state, setState] = useState(false);
   const [repeat, setRepeat] = useState(true);
@@ -52,7 +54,10 @@ export default function FiltroCards({ dataCards, setDataCards }: Props) {
 
 
   return (
-    <div className={styles.container__filtro} >
+    <div className={classNames({
+      [styles.container__filtro]: true,
+      [styles['container__filter--dark']]: theme ==='dark'? true : false
+    })} >
       <h4>Ordenar por: </h4>
       <ul>
         {label.map(label => (
@@ -60,7 +65,7 @@ export default function FiltroCards({ dataCards, setDataCards }: Props) {
             {label.label}
             <p onClick={() => clearFilter(Data)} className={classNames({
               [styles.container__close]: true,
-              [styles['container__close--ativo']]: idTag === label.id ? state : ''
+              [styles['container__close--active']]: idTag === label.id ? state : ''
             })}>x</p>
           </li>
         ))}
