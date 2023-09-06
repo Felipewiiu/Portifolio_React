@@ -74,7 +74,7 @@
                     justify-content: center;
                     text-decoration: none;
                     border-radius: 1.5625rem;
-                    border: 0.5px solid #F5F5F5;
+                    border: none;
                     background: $purple;
                     color: #fdfdfd;
                     width: 7.125rem;
@@ -161,7 +161,6 @@
                     justify-content: center;
                     text-decoration: none;
                     border-radius: 1.5625rem;
-                    border: 1px solid rgba(167, 167, 167, 0.25);
                     background: $purple;
                     color: #fdfdfd;
                     width: 7.125rem;
@@ -171,7 +170,7 @@
 
                     &:hover {
                         background-color: #5c59f7;
-                        color: #ffff;
+                        // color: #ffff;
                         transition: all 400ms;
                     }
 

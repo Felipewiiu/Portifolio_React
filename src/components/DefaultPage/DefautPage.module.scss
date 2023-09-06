@@ -9,6 +9,7 @@
         max-width: 1200px;
         align-items: center;
         height: auto;
+        min-height: 100vh;
 
         &--dark {
             background-color: $dark-color;
