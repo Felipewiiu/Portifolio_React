@@ -5,6 +5,7 @@
 @media screen and (min-width: $deskTop-min-width) {
     .container {
         background-color: $purple;
+
         &__footer {
             font-size: 0.75rem;
             width: calc(100% - 121px);
@@ -14,7 +15,8 @@
 
 @media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     .container {
-        background-color:  $purple;
+        background-color: $purple;
+
         &__footer {
             font-size: 0.75rem;
             width: 100%;
@@ -25,7 +27,8 @@
 
 @media screen and (max-width: $smartphone-max-width) {
     .container {
-        background-color:  $purple;
+        background-color: $purple;
+
         &__footer {
             font-size: 0.75rem;
             width: 100%;
