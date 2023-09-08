@@ -7,11 +7,15 @@ import { ReactComponent as ToGo } from 'assets/toGo.svg';
 import { useRef } from 'react';
 import { Routes, Route, useParams, useNavigate } from 'react-router-dom';
 import NotFound from 'pages/notFound';
-
+import classNames from 'classnames';
+import { useContext } from 'react';
+import { ThemeContext } from 'context/themeContext';
 
 
 
 export default function Cards() {
+  const {theme} = useContext(ThemeContext);
+
   const navigate = useNavigate();
   const { id } = useParams();
   const cards = Data.find(card => card.id === Number(id));
@@ -36,7 +40,10 @@ export default function Cards() {
     <Routes>
       <Route path='/' element={<DefaultPage />}>
         <Route index element={
-          <section className={styles.container}>
+          <section className={classNames({
+            [styles.container]: true,
+            [styles['container--dark']]: theme === 'dark'? true : false
+          })}>
             <div className={styles.container__banner}>
               <div className={styles.title}>
                 <h1 ref={titleRef} >{cards.title}</h1>
